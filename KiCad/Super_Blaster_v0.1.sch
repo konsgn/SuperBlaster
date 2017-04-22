@@ -1,0 +1,145 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Homebrew
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FT601Q U?
+U 1 1 58FB0266
+P 1950 2150
+F 0 "U?" H 1450 3100 60  0000 C CNN
+F 1 "FT601Q" H 1950 1250 60  0000 C CNN
+F 2 "" H 1750 2150 60  0001 C CNN
+F 3 "" H 1750 2150 60  0001 C CNN
+	1    1950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT601Q U?
+U 2 1 58FB02E0
+P 1600 4650
+F 0 "U?" H 1100 5600 60  0000 C CNN
+F 1 "FT601Q" H 1600 3750 60  0000 C CNN
+F 2 "" H 1400 4650 60  0001 C CNN
+F 3 "" H 1400 4650 60  0001 C CNN
+	2    1600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT601Q U?
+U 3 1 58FB0355
+P 1550 6700
+F 0 "U?" H 1050 7650 60  0000 C CNN
+F 1 "FT601Q" H 1550 5800 60  0000 C CNN
+F 2 "" H 1350 6700 60  0001 C CNN
+F 3 "" H 1350 6700 60  0001 C CNN
+	3    1550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 1 1 58FB0409
+P 3400 1000
+F 0 "U?" H 3600 1250 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 3600 1150 60  0000 L CNN
+F 2 "" H 3400 1000 60  0001 C CNN
+F 3 "" H 3400 1000 60  0001 C CNN
+	1    3400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 2 1 58FB0482
+P 4950 1000
+F 0 "U?" H 5150 1250 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 5150 1150 60  0000 L CNN
+F 2 "" H 4950 1000 60  0001 C CNN
+F 3 "" H 4950 1000 60  0001 C CNN
+	2    4950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 3 1 58FB05E6
+P 6700 1000
+F 0 "U?" H 6900 1250 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 6900 1150 60  0000 L CNN
+F 2 "" H 6700 1000 60  0001 C CNN
+F 3 "" H 6700 1000 60  0001 C CNN
+	3    6700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 4 1 58FB068B
+P 8100 1050
+F 0 "U?" H 8300 1300 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 8300 1200 60  0000 L CNN
+F 2 "" H 8100 1050 60  0001 C CNN
+F 3 "" H 8100 1050 60  0001 C CNN
+	4    8100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 5 1 58FB070B
+P 9650 1000
+F 0 "U?" H 9850 1250 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 9850 1150 60  0000 L CNN
+F 2 "" H 9650 1000 60  0001 C CNN
+F 3 "" H 9650 1000 60  0001 C CNN
+	5    9650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L iCE40-HX8K-CT256 U?
+U 6 1 58FB07D6
+P 2850 6850
+F 0 "U?" H 3050 7100 60  0000 L CNN
+F 1 "iCE40-HX8K-CT256" H 3050 7000 60  0000 L CNN
+F 2 "" H 2850 6850 60  0001 C CNN
+F 3 "" H 2850 6850 60  0001 C CNN
+	6    2850 6850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
