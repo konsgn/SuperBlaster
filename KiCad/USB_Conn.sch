@@ -60,8 +60,6 @@ Text HLabel 9500 1000 2    60   BiDi ~ 0
 DATA16-31
 Text HLabel 9500 4000 2    60   BiDi ~ 0
 DATA0-15
-Wire Bus Line
-	9000 4000 9000 5600
 Entry Wire Line
 	9000 5600 8900 5700
 Entry Wire Line
@@ -94,42 +92,8 @@ Entry Wire Line
 	9000 4100 8900 4200
 Entry Wire Line
 	9000 4000 8900 4100
-Wire Bus Line
-	9500 4000 9000 4000
-Wire Wire Line
-	8700 4100 8900 4100
-Wire Wire Line
-	8700 4200 8900 4200
-Wire Wire Line
-	8700 4300 8900 4300
-Wire Wire Line
-	8700 4400 8900 4400
-Wire Wire Line
-	8700 4500 8900 4500
-Wire Wire Line
-	8700 4600 8900 4600
-Wire Wire Line
-	8700 4700 8900 4700
-Wire Wire Line
-	8700 4800 8900 4800
 Entry Wire Line
 	8900 5000 9000 4900
-Wire Wire Line
-	8700 5000 8900 5000
-Wire Wire Line
-	8900 5100 8700 5100
-Wire Wire Line
-	8700 5200 8900 5200
-Wire Wire Line
-	8900 5300 8700 5300
-Wire Wire Line
-	8900 5400 8700 5400
-Wire Wire Line
-	8900 5500 8700 5500
-Wire Wire Line
-	8900 5600 8700 5600
-Wire Wire Line
-	8900 5700 8700 5700
 Text Label 9000 4000 0    60   ~ 0
 DATA0-15
 Text Label 8700 4100 0    60   ~ 0
@@ -164,10 +128,6 @@ Text Label 8700 4400 0    60   ~ 0
 D12
 Text Label 8700 4300 0    60   ~ 0
 D13
-Wire Bus Line
-	9500 1000 9000 1000
-Wire Bus Line
-	9000 1000 9000 2600
 Entry Wire Line
 	8900 1100 9000 1000
 Entry Wire Line
@@ -200,38 +160,6 @@ Entry Wire Line
 	8900 2600 9000 2500
 Entry Wire Line
 	8900 2700 9000 2600
-Wire Wire Line
-	8700 1100 8900 1100
-Wire Wire Line
-	8700 1200 8900 1200
-Wire Wire Line
-	8700 1300 8900 1300
-Wire Wire Line
-	8700 1400 8900 1400
-Wire Wire Line
-	8700 1500 8900 1500
-Wire Wire Line
-	8900 1600 8700 1600
-Wire Wire Line
-	8900 1700 8700 1700
-Wire Wire Line
-	8700 1800 8900 1800
-Wire Wire Line
-	8900 2000 8700 2000
-Wire Wire Line
-	8700 2100 8900 2100
-Wire Wire Line
-	8700 2200 8900 2200
-Wire Wire Line
-	8700 2300 8900 2300
-Wire Wire Line
-	8700 2400 8900 2400
-Wire Wire Line
-	8700 2500 8900 2500
-Wire Wire Line
-	8700 2600 8900 2600
-Wire Wire Line
-	8700 2700 8900 2700
 Text Label 8700 2700 0    60   ~ 0
 D16
 Text Label 8700 2600 0    60   ~ 0
@@ -266,20 +194,6 @@ Text Label 8700 1100 0    60   ~ 0
 D31
 Text Label 9000 1000 0    60   ~ 0
 DATA16-31
-Wire Wire Line
-	1200 1200 1600 1200
-Wire Wire Line
-	1200 1300 1600 1300
-Wire Wire Line
-	1200 1500 1600 1500
-Wire Wire Line
-	1200 1600 1600 1600
-Wire Wire Line
-	1200 1700 1600 1700
-Wire Wire Line
-	3300 1200 2800 1200
-Wire Wire Line
-	3300 1300 2800 1300
 Text Label 1200 1200 0    60   ~ 0
 SS_TX1+
 Text Label 1200 1300 0    60   ~ 0
@@ -292,38 +206,10 @@ Text Label 1200 1600 0    60   ~ 0
 USB_D+
 Text Label 1200 1700 0    60   ~ 0
 USB_D-
-Wire Wire Line
-	1600 2200 1500 2200
-Wire Wire Line
-	1500 2200 1500 2500
-Wire Wire Line
-	2800 2200 2900 2200
-Wire Wire Line
-	2900 2200 2900 2500
-Wire Wire Line
-	1600 1100 1000 1100
-Wire Wire Line
-	1000 1100 1000 1200
-Wire Wire Line
-	3600 1200 3600 1100
-Wire Wire Line
-	3600 1100 2800 1100
-Wire Wire Line
-	3100 1800 3100 1800
-Wire Wire Line
-	3300 1800 2800 1800
 Text Label 3100 1800 0    60   ~ 0
 CC2
 Text Label 1200 1500 0    60   ~ 0
 CC1
-Wire Wire Line
-	1300 1400 1600 1400
-Wire Wire Line
-	1300 1900 1600 1900
-Wire Wire Line
-	3100 1900 2800 1900
-Wire Wire Line
-	3100 1400 2800 1400
 Text Label 1300 1400 0    60   ~ 0
 USB_V
 Text Label 1300 1900 0    60   ~ 0
@@ -336,10 +222,6 @@ Text Label 3300 1600 2    60   ~ 0
 USB_D-
 Text Label 3300 1700 2    60   ~ 0
 USB_D+
-Wire Wire Line
-	3300 1700 2800 1700
-Wire Wire Line
-	3300 1600 2800 1600
 $Comp
 L Earth #PWR?
 U 1 1 5902166F
@@ -376,12 +258,12 @@ $EndComp
 $Comp
 L Earth #PWR?
 U 1 1 590216FD
-P 3600 1200
-F 0 "#PWR?" H 3600 950 50  0001 C CNN
-F 1 "Earth" H 3600 1050 50  0001 C CNN
-F 2 "" H 3600 1200 50  0001 C CNN
-F 3 "" H 3600 1200 50  0001 C CNN
-	1    3600 1200
+P 3500 1200
+F 0 "#PWR?" H 3500 950 50  0001 C CNN
+F 1 "Earth" H 3500 1050 50  0001 C CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -395,20 +277,6 @@ F 3 "" H 1000 1200 50  0001 C CNN
 	1    1000 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 3000 5800 3000
-Wire Wire Line
-	5200 3200 5800 3200
-Wire Wire Line
-	5200 3300 5800 3300
-Wire Wire Line
-	5200 3400 5800 3400
-Wire Wire Line
-	5200 3500 5800 3500
-Wire Wire Line
-	5300 3600 5800 3600
-Wire Wire Line
-	5300 3700 5800 3700
 Text Label 5200 3200 0    60   ~ 0
 SS_RX+
 Text Label 5200 3300 0    60   ~ 0
@@ -451,14 +319,6 @@ Text Label 3200 3800 2    60   ~ 0
 SS_TX+
 Text Label 3200 3900 2    60   ~ 0
 SS_TX-
-Wire Wire Line
-	3200 3800 2800 3800
-Wire Wire Line
-	3200 3900 2800 3900
-Wire Wire Line
-	3200 4000 2800 4000
-Wire Wire Line
-	3200 4100 2800 4100
 Text Label 1200 3900 0    60   ~ 0
 SS_TX1+
 Text Label 1200 4000 0    60   ~ 0
@@ -467,30 +327,6 @@ Text Label 1200 4200 0    60   ~ 0
 SS_RX1-
 Text Label 1200 4100 0    60   ~ 0
 SS_RX1+
-Wire Wire Line
-	1200 4200 1700 4200
-Wire Wire Line
-	1200 4100 1700 4100
-Wire Wire Line
-	1200 4000 1700 4000
-Wire Wire Line
-	1200 3900 1700 3900
-Wire Wire Line
-	1200 3400 1700 3400
-Wire Wire Line
-	1200 3500 1700 3500
-Wire Wire Line
-	1200 3600 1700 3600
-Wire Wire Line
-	1200 3700 1700 3700
-Wire Wire Line
-	3300 2000 2800 2000
-Wire Wire Line
-	3300 2100 2800 2100
-Wire Wire Line
-	1200 2000 1600 2000
-Wire Wire Line
-	1200 2100 1600 2100
 Text Label 1200 2000 0    60   ~ 0
 SS_RX2-
 Text Label 1200 3700 0    60   ~ 0
@@ -544,4 +380,641 @@ F 3 "" H 8100 4900 60  0001 C CNN
 	3    8300 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59035792
+P 6300 4700
+F 0 "#PWR?" H 6300 4450 50  0001 C CNN
+F 1 "Earth" H 6300 4550 50  0001 C CNN
+F 2 "" H 6300 4700 50  0001 C CNN
+F 3 "" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5903772D
+P 900 1600
+F 0 "R?" H 930 1620 50  0000 L CNN
+F 1 "5.1K_10%" H 930 1560 50  0000 L CNN
+F 2 "" H 900 1600 50  0001 C CNN
+F 3 "" H 900 1600 50  0001 C CNN
+	1    900  1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 590377E4
+P 3600 1900
+F 0 "R?" H 3630 1920 50  0000 L CNN
+F 1 "5.1K_10%" H 3630 1860 50  0000 L CNN
+F 2 "" H 3600 1900 50  0001 C CNN
+F 3 "" H 3600 1900 50  0001 C CNN
+	1    3600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59037830
+P 900 1700
+F 0 "#PWR?" H 900 1450 50  0001 C CNN
+F 1 "Earth" H 900 1550 50  0001 C CNN
+F 2 "" H 900 1700 50  0001 C CNN
+F 3 "" H 900 1700 50  0001 C CNN
+	1    900  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59037850
+P 3600 2000
+F 0 "#PWR?" H 3600 1750 50  0001 C CNN
+F 1 "Earth" H 3600 1850 50  0001 C CNN
+F 2 "" H 3600 2000 50  0001 C CNN
+F 3 "" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	9000 4000 9000 4100
+Wire Bus Line
+	9000 4100 9000 4200
+Wire Bus Line
+	9000 4200 9000 4300
+Wire Bus Line
+	9000 4300 9000 4400
+Wire Bus Line
+	9000 4400 9000 4500
+Wire Bus Line
+	9000 4500 9000 4600
+Wire Bus Line
+	9000 4600 9000 4700
+Wire Bus Line
+	9000 4700 9000 4900
+Wire Bus Line
+	9000 4900 9000 5000
+Wire Bus Line
+	9000 5000 9000 5100
+Wire Bus Line
+	9000 5100 9000 5200
+Wire Bus Line
+	9000 5200 9000 5300
+Wire Bus Line
+	9000 5300 9000 5400
+Wire Bus Line
+	9000 5400 9000 5500
+Wire Bus Line
+	9000 5500 9000 5600
+Wire Bus Line
+	9500 4000 9000 4000
+Wire Wire Line
+	8700 4100 8900 4100
+Wire Wire Line
+	8700 4200 8900 4200
+Wire Wire Line
+	8700 4300 8900 4300
+Wire Wire Line
+	8700 4400 8900 4400
+Wire Wire Line
+	8700 4500 8900 4500
+Wire Wire Line
+	8700 4600 8900 4600
+Wire Wire Line
+	8700 4700 8900 4700
+Wire Wire Line
+	8700 4800 8900 4800
+Wire Wire Line
+	8700 5000 8900 5000
+Wire Wire Line
+	8900 5100 8700 5100
+Wire Wire Line
+	8700 5200 8900 5200
+Wire Wire Line
+	8900 5300 8700 5300
+Wire Wire Line
+	8900 5400 8700 5400
+Wire Wire Line
+	8900 5500 8700 5500
+Wire Wire Line
+	8900 5600 8700 5600
+Wire Wire Line
+	8900 5700 8700 5700
+Wire Bus Line
+	9500 1000 9000 1000
+Wire Bus Line
+	9000 1000 9000 1100
+Wire Bus Line
+	9000 1100 9000 1200
+Wire Bus Line
+	9000 1200 9000 1300
+Wire Bus Line
+	9000 1300 9000 1400
+Wire Bus Line
+	9000 1400 9000 1500
+Wire Bus Line
+	9000 1500 9000 1600
+Wire Bus Line
+	9000 1600 9000 1700
+Wire Bus Line
+	9000 1700 9000 1900
+Wire Bus Line
+	9000 1900 9000 2000
+Wire Bus Line
+	9000 2000 9000 2100
+Wire Bus Line
+	9000 2100 9000 2200
+Wire Bus Line
+	9000 2200 9000 2300
+Wire Bus Line
+	9000 2300 9000 2400
+Wire Bus Line
+	9000 2400 9000 2500
+Wire Bus Line
+	9000 2500 9000 2600
+Wire Wire Line
+	8700 1100 8900 1100
+Wire Wire Line
+	8700 1200 8900 1200
+Wire Wire Line
+	8700 1300 8900 1300
+Wire Wire Line
+	8700 1400 8900 1400
+Wire Wire Line
+	8700 1500 8900 1500
+Wire Wire Line
+	8900 1600 8700 1600
+Wire Wire Line
+	8900 1700 8700 1700
+Wire Wire Line
+	8700 1800 8900 1800
+Wire Wire Line
+	8900 2000 8700 2000
+Wire Wire Line
+	8700 2100 8900 2100
+Wire Wire Line
+	8700 2200 8900 2200
+Wire Wire Line
+	8700 2300 8900 2300
+Wire Wire Line
+	8700 2400 8900 2400
+Wire Wire Line
+	8700 2500 8900 2500
+Wire Wire Line
+	8700 2600 8900 2600
+Wire Wire Line
+	8700 2700 8900 2700
+Wire Wire Line
+	1200 1200 1600 1200
+Wire Wire Line
+	1200 1300 1600 1300
+Wire Wire Line
+	900  1500 1600 1500
+Wire Wire Line
+	1200 1600 1600 1600
+Wire Wire Line
+	1200 1700 1600 1700
+Wire Wire Line
+	3300 1200 2800 1200
+Wire Wire Line
+	3300 1300 2800 1300
+Wire Wire Line
+	1600 2200 1500 2200
+Wire Wire Line
+	1500 2200 1500 2500
+Wire Wire Line
+	2800 2200 2900 2200
+Wire Wire Line
+	2900 2200 2900 2500
+Wire Wire Line
+	1600 1100 1000 1100
+Wire Wire Line
+	1000 1100 1000 1200
+Wire Wire Line
+	3500 1200 3500 1100
+Wire Wire Line
+	3500 1100 2800 1100
+Wire Wire Line
+	3100 1800 3100 1800
+Wire Wire Line
+	2800 1800 3600 1800
+Wire Wire Line
+	1300 1400 1600 1400
+Wire Wire Line
+	1300 1900 1600 1900
+Wire Wire Line
+	3100 1900 2800 1900
+Wire Wire Line
+	3100 1400 2800 1400
+Wire Wire Line
+	3300 1700 2800 1700
+Wire Wire Line
+	3300 1600 2800 1600
+Wire Wire Line
+	5200 2900 5800 2900
+Wire Wire Line
+	5200 3200 5800 3200
+Wire Wire Line
+	5200 3300 5800 3300
+Wire Wire Line
+	5200 3400 5800 3400
+Wire Wire Line
+	5200 3500 5800 3500
+Wire Wire Line
+	5300 3600 5800 3600
+Wire Wire Line
+	5300 3700 5800 3700
+Wire Wire Line
+	3200 3800 2800 3800
+Wire Wire Line
+	3200 3900 2800 3900
+Wire Wire Line
+	3200 4000 2800 4000
+Wire Wire Line
+	3200 4100 2800 4100
+Wire Wire Line
+	1200 4200 1700 4200
+Wire Wire Line
+	1200 4100 1700 4100
+Wire Wire Line
+	1200 4000 1700 4000
+Wire Wire Line
+	1200 3900 1700 3900
+Wire Wire Line
+	1200 3400 1700 3400
+Wire Wire Line
+	1200 3500 1700 3500
+Wire Wire Line
+	1200 3600 1700 3600
+Wire Wire Line
+	1200 3700 1700 3700
+Wire Wire Line
+	3300 2000 2800 2000
+Wire Wire Line
+	3300 2100 2800 2100
+Wire Wire Line
+	1200 2000 1600 2000
+Wire Wire Line
+	1200 2100 1600 2100
+$Comp
+L R_Small R?
+U 1 1 59039265
+P 1300 6000
+F 0 "R?" H 1330 6020 50  0000 L CNN
+F 1 "?" H 1330 5960 50  0000 L CNN
+F 2 "" H 1300 6000 50  0001 C CNN
+F 3 "" H 1300 6000 50  0001 C CNN
+	1    1300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59039381
+P 1300 6200
+F 0 "R?" H 1330 6220 50  0000 L CNN
+F 1 "?" H 1330 6160 50  0000 L CNN
+F 2 "" H 1300 6200 50  0001 C CNN
+F 3 "" H 1300 6200 50  0001 C CNN
+	1    1300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 590393BC
+P 1200 7300
+F 0 "R?" H 1230 7320 50  0000 L CNN
+F 1 "10M" H 1230 7260 50  0000 L CNN
+F 2 "" H 1200 7300 50  0001 C CNN
+F 3 "" H 1200 7300 50  0001 C CNN
+	1    1200 7300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5903940A
+P 1200 7500
+F 0 "R?" H 1230 7520 50  0000 L CNN
+F 1 "10M" H 1230 7460 50  0000 L CNN
+F 2 "" H 1200 7500 50  0001 C CNN
+F 3 "" H 1200 7500 50  0001 C CNN
+	1    1200 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59039523
+P 4300 6000
+F 0 "R?" H 4330 6020 50  0000 L CNN
+F 1 "?" H 4330 5960 50  0000 L CNN
+F 2 "" H 4300 6000 50  0001 C CNN
+F 3 "" H 4300 6000 50  0001 C CNN
+	1    4300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 590395A1
+P 4300 6200
+F 0 "R?" H 4330 6220 50  0000 L CNN
+F 1 "?" H 4330 6160 50  0000 L CNN
+F 2 "" H 4300 6200 50  0001 C CNN
+F 3 "" H 4300 6200 50  0001 C CNN
+	1    4300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 590395E4
+P 4300 7300
+F 0 "R?" H 4330 7320 50  0000 L CNN
+F 1 "?" H 4330 7260 50  0000 L CNN
+F 2 "" H 4300 7300 50  0001 C CNN
+F 3 "" H 4300 7300 50  0001 C CNN
+	1    4300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5903963C
+P 4300 7500
+F 0 "R?" H 4330 7520 50  0000 L CNN
+F 1 "?" H 4330 7460 50  0000 L CNN
+F 2 "" H 4300 7500 50  0001 C CNN
+F 3 "" H 4300 7500 50  0001 C CNN
+	1    4300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 590397EE
+P 1900 6300
+F 0 "#PWR?" H 1900 6050 50  0001 C CNN
+F 1 "Earth" H 1900 6150 50  0001 C CNN
+F 2 "" H 1900 6300 50  0001 C CNN
+F 3 "" H 1900 6300 50  0001 C CNN
+	1    1900 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5600 1900 5600
+Wire Wire Line
+	1900 5600 2100 5600
+Wire Wire Line
+	1900 5600 1900 5700
+Text GLabel 2100 5600 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	1500 5900 1700 5900
+Wire Wire Line
+	4500 7200 4700 7200
+Wire Wire Line
+	4500 5900 4700 5900
+Text Label 1500 5900 0    60   ~ 0
+CC2
+Text Label 4500 5900 0    60   ~ 0
+CCV
+Text Label 4500 7200 0    60   ~ 0
+CCV
+Wire Wire Line
+	1300 5600 1300 5900
+Connection ~ 1900 5600
+Text GLabel 2100 6900 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	4300 5600 4900 5600
+Wire Wire Line
+	4900 5600 5100 5600
+Wire Wire Line
+	4900 5600 4900 5700
+Text GLabel 5100 5600 2    60   Input ~ 0
+3v3
+Connection ~ 4900 5600
+Wire Wire Line
+	4300 6900 4900 6900
+Wire Wire Line
+	4900 6900 5100 6900
+Wire Wire Line
+	4900 6900 4900 7000
+Text GLabel 5100 6900 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	4300 6900 4300 7200
+Connection ~ 4900 6900
+$Comp
+L Earth #PWR?
+U 1 1 5903A88C
+P 1900 7600
+F 0 "#PWR?" H 1900 7350 50  0001 C CNN
+F 1 "Earth" H 1900 7450 50  0001 C CNN
+F 2 "" H 1900 7600 50  0001 C CNN
+F 3 "" H 1900 7600 50  0001 C CNN
+	1    1900 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5903A8D0
+P 4900 7600
+F 0 "#PWR?" H 4900 7350 50  0001 C CNN
+F 1 "Earth" H 4900 7450 50  0001 C CNN
+F 2 "" H 4900 7600 50  0001 C CNN
+F 3 "" H 4900 7600 50  0001 C CNN
+	1    4900 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5903A914
+P 4900 6300
+F 0 "#PWR?" H 4900 6050 50  0001 C CNN
+F 1 "Earth" H 4900 6150 50  0001 C CNN
+F 2 "" H 4900 6300 50  0001 C CNN
+F 3 "" H 4900 6300 50  0001 C CNN
+	1    4900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5903A958
+P 4300 6300
+F 0 "#PWR?" H 4300 6050 50  0001 C CNN
+F 1 "Earth" H 4300 6150 50  0001 C CNN
+F 2 "" H 4300 6300 50  0001 C CNN
+F 3 "" H 4300 6300 50  0001 C CNN
+	1    4300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5903A9C2
+P 4300 7600
+F 0 "#PWR?" H 4300 7350 50  0001 C CNN
+F 1 "Earth" H 4300 7450 50  0001 C CNN
+F 2 "" H 4300 7600 50  0001 C CNN
+F 3 "" H 4300 7600 50  0001 C CNN
+	1    4300 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5903AA83
+P 1300 6300
+F 0 "#PWR?" H 1300 6050 50  0001 C CNN
+F 1 "Earth" H 1300 6150 50  0001 C CNN
+F 2 "" H 1300 6300 50  0001 C CNN
+F 3 "" H 1300 6300 50  0001 C CNN
+	1    1300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6100 1700 6100
+Wire Wire Line
+	4300 7400 4700 7400
+$Comp
+L Earth #PWR?
+U 1 1 5903B44E
+P 3400 3500
+F 0 "#PWR?" H 3400 3250 50  0001 C CNN
+F 1 "Earth" H 3400 3350 50  0001 C CNN
+F 2 "" H 3400 3500 50  0001 C CNN
+F 3 "" H 3400 3500 50  0001 C CNN
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3500 2800 3500
+Text GLabel 2700 3100 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	2700 3100 2400 3100
+Wire Wire Line
+	2400 3100 2400 3200
+Wire Wire Line
+	3200 3600 2800 3600
+Text Label 3200 3600 2    60   ~ 0
+Switch
+Wire Wire Line
+	2700 6000 2300 6000
+Wire Wire Line
+	5300 6000 5700 6000
+Wire Wire Line
+	5700 7300 5300 7300
+$Comp
+L LM324 U?
+U 1 1 5903CF5D
+P 2000 6000
+F 0 "U?" H 2000 6200 50  0000 L CNN
+F 1 "LM324" H 2000 5800 50  0000 L CNN
+F 2 "" H 1950 6100 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 2 1 5903D10C
+P 2000 7300
+F 0 "U?" H 2000 7500 50  0000 L CNN
+F 1 "LM324" H 2000 7100 50  0000 L CNN
+F 2 "" H 1950 7400 50  0001 C CNN
+F 3 "" H 2050 7500 50  0001 C CNN
+	2    2000 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 3 1 5903D176
+P 5000 6000
+F 0 "U?" H 5000 6200 50  0000 L CNN
+F 1 "LM324" H 5000 5800 50  0000 L CNN
+F 2 "" H 4950 6100 50  0001 C CNN
+F 3 "" H 5050 6200 50  0001 C CNN
+	3    5000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 4 1 5903D1D5
+P 5000 7300
+F 0 "U?" H 5000 7500 50  0000 L CNN
+F 1 "LM324" H 5000 7100 50  0000 L CNN
+F 2 "" H 4950 7400 50  0001 C CNN
+F 3 "" H 5050 7500 50  0001 C CNN
+	4    5000 7300
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 5200 0    60   ~ 0
+Voltage Sense for\n- Super Speed channel switching\n- Current Capability Detection
+Text Notes 1300 5400 0    60   ~ 0
+Switch Detection
+Text Label 2700 6000 2    60   ~ 0
+Switch
+Text Notes 1300 6700 0    60   ~ 0
+Summing Amplifier
+Text Notes 4300 5400 0    60   ~ 0
+1.5 Amp Capacity Detection
+Text Notes 4300 6700 0    60   ~ 0
+3 Amp Capacity Detection
+Wire Wire Line
+	4300 5600 4300 5900
+Wire Wire Line
+	4300 6100 4700 6100
+Wire Wire Line
+	1300 7300 1600 7300
+Wire Wire Line
+	1600 7300 1600 7400
+Wire Wire Line
+	1600 7400 1600 7500
+Wire Wire Line
+	1600 7400 1700 7400
+Wire Wire Line
+	1600 7500 1300 7500
+Connection ~ 1600 7400
+Wire Wire Line
+	800  7300 1100 7300
+Wire Wire Line
+	800  7500 1100 7500
+Text Label 800  7300 0    60   ~ 0
+CC1
+Text Label 800  7500 0    60   ~ 0
+CC2
+$Comp
+L R_Small R?
+U 1 1 5903F40B
+P 1900 7800
+F 0 "R?" H 1930 7820 50  0000 L CNN
+F 1 "10M" H 1930 7760 50  0000 L CNN
+F 2 "" H 1900 7800 50  0001 C CNN
+F 3 "" H 1900 7800 50  0001 C CNN
+	1    1900 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 7800 1600 7800
+Wire Wire Line
+	1600 7800 1600 7400
+Wire Wire Line
+	2000 7800 2300 7800
+Wire Wire Line
+	2300 7800 2300 7300
+Wire Wire Line
+	2300 7300 2600 7300
+Wire Wire Line
+	1600 6900 1900 6900
+Wire Wire Line
+	1900 6900 2100 6900
+Wire Wire Line
+	1900 6900 1900 7000
+Wire Wire Line
+	1700 7200 1600 7200
+Wire Wire Line
+	1600 7200 1600 6900
+Connection ~ 1900 6900
+Text Label 2600 7300 2    60   ~ 0
+CCV
+Text Notes 4300 5500 0    60   ~ 0
+Set Vref to .69V 
+Text Notes 4300 6800 0    60   ~ 0
+Set Vref to 1.3V 
+Text Notes 1300 5500 0    60   ~ 0
+Set Vref to .24V 
 $EndSCHEMATC
