@@ -56,45 +56,9 @@ F 3 "" H 2200 1600 60  0001 C CNN
 	1    2200 1600
 	1    0    0    -1  
 $EndComp
-Text HLabel 9800 1300 2    60   BiDi ~ 0
+Text HLabel 9500 2200 2    60   BiDi ~ 0
 DATA16-31
-Text HLabel 9800 4300 2    60   BiDi ~ 0
-DATA0-15
-Entry Wire Line
-	9300 5900 9200 6000
-Entry Wire Line
-	9300 5800 9200 5900
-Entry Wire Line
-	9300 5700 9200 5800
-Entry Wire Line
-	9300 5700 9200 5800
-Entry Wire Line
-	9300 5600 9200 5700
-Entry Wire Line
-	9300 5500 9200 5600
-Entry Wire Line
-	9300 5400 9200 5500
-Entry Wire Line
-	9300 5300 9200 5400
-Entry Wire Line
-	9300 5000 9200 5100
-Entry Wire Line
-	9300 4900 9200 5000
-Entry Wire Line
-	9300 4800 9200 4900
-Entry Wire Line
-	9300 4700 9200 4800
-Entry Wire Line
-	9300 4600 9200 4700
-Entry Wire Line
-	9300 4500 9200 4600
-Entry Wire Line
-	9300 4400 9200 4500
-Entry Wire Line
-	9300 4300 9200 4400
-Entry Wire Line
-	9200 5300 9300 5200
-Text Label 9300 4300 0    60   ~ 0
+Text HLabel 9500 5200 2    60   BiDi ~ 0
 DATA0-15
 Text Label 9000 4400 0    60   ~ 0
 D15
@@ -128,72 +92,38 @@ Text Label 9000 4700 0    60   ~ 0
 D12
 Text Label 9000 4600 0    60   ~ 0
 D13
-Entry Wire Line
-	9200 1400 9300 1300
-Entry Wire Line
-	9200 1500 9300 1400
-Entry Wire Line
-	9200 1600 9300 1500
-Entry Wire Line
-	9200 1700 9300 1600
-Entry Wire Line
-	9200 1800 9300 1700
-Entry Wire Line
-	9200 1900 9300 1800
-Entry Wire Line
-	9200 2000 9300 1900
-Entry Wire Line
-	9200 2100 9300 2000
-Entry Wire Line
-	9200 2300 9300 2200
-Entry Wire Line
-	9200 2400 9300 2300
-Entry Wire Line
-	9200 2500 9300 2400
-Entry Wire Line
-	9200 2600 9300 2500
-Entry Wire Line
-	9200 2700 9300 2600
-Entry Wire Line
-	9200 2800 9300 2700
-Entry Wire Line
-	9200 2900 9300 2800
-Entry Wire Line
-	9200 3000 9300 2900
-Text Label 9000 3000 0    60   ~ 0
+Text Label 8900 3000 0    60   ~ 0
 D16
-Text Label 9000 2900 0    60   ~ 0
+Text Label 8900 2900 0    60   ~ 0
 D17
-Text Label 9000 2800 0    60   ~ 0
+Text Label 8900 2800 0    60   ~ 0
 D18
-Text Label 9000 2700 0    60   ~ 0
+Text Label 8900 2700 0    60   ~ 0
 D19
-Text Label 9000 2600 0    60   ~ 0
+Text Label 8900 2600 0    60   ~ 0
 D20
-Text Label 9000 2500 0    60   ~ 0
+Text Label 8900 2500 0    60   ~ 0
 D21
-Text Label 9000 2400 0    60   ~ 0
+Text Label 8900 2400 0    60   ~ 0
 D22
-Text Label 9000 2300 0    60   ~ 0
+Text Label 8900 2300 0    60   ~ 0
 D23
-Text Label 9000 2100 0    60   ~ 0
+Text Label 8900 2100 0    60   ~ 0
 D24
-Text Label 9000 2000 0    60   ~ 0
+Text Label 8900 2000 0    60   ~ 0
 D25
-Text Label 9000 1900 0    60   ~ 0
+Text Label 8900 1900 0    60   ~ 0
 D26
-Text Label 9000 1800 0    60   ~ 0
+Text Label 8900 1800 0    60   ~ 0
 D27
-Text Label 9000 1700 0    60   ~ 0
+Text Label 8900 1700 0    60   ~ 0
 D28
-Text Label 9000 1600 0    60   ~ 0
+Text Label 8900 1600 0    60   ~ 0
 D29
-Text Label 9000 1500 0    60   ~ 0
+Text Label 8900 1500 0    60   ~ 0
 D30
-Text Label 9000 1400 0    60   ~ 0
+Text Label 8900 1400 0    60   ~ 0
 D31
-Text Label 9300 1300 0    60   ~ 0
-DATA16-31
 Text Label 1200 1200 0    60   ~ 0
 SS_TX1+
 Text Label 1200 1300 0    60   ~ 0
@@ -353,7 +283,7 @@ U 1 1 590288D4
 P 6900 4000
 F 0 "U4" H 7000 3100 60  0000 C CNN
 F 1 "FT601Q" H 7000 3000 60  0000 C CNN
-F 2 "" H 6700 4000 60  0001 C CNN
+F 2 "Homebrew:QFN_76_PAD" H 6700 4000 60  0001 C CNN
 F 3 "" H 6700 4000 60  0001 C CNN
 	1    6900 4000
 	1    0    0    -1  
@@ -361,23 +291,23 @@ $EndComp
 $Comp
 L FT601Q U4
 U 2 1 59028949
-P 8600 2200
-F 0 "U4" H 8700 1300 60  0000 C CNN
-F 1 "FT601Q" H 8700 1200 60  0000 C CNN
-F 2 "" H 8400 2200 60  0001 C CNN
-F 3 "" H 8400 2200 60  0001 C CNN
-	2    8600 2200
+P 8500 5200
+F 0 "U4" H 8600 4300 60  0000 C CNN
+F 1 "FT601Q" H 8600 4200 60  0000 C CNN
+F 2 "" H 8300 5200 60  0001 C CNN
+F 3 "" H 8300 5200 60  0001 C CNN
+	2    8500 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L FT601Q U4
 U 3 1 590299B6
-P 8600 5200
-F 0 "U4" H 8700 4300 60  0000 C CNN
-F 1 "FT601Q" H 8700 4200 60  0000 C CNN
-F 2 "" H 8400 5200 60  0001 C CNN
-F 3 "" H 8400 5200 60  0001 C CNN
-	3    8600 5200
+P 8400 2200
+F 0 "U4" H 8500 1300 60  0000 C CNN
+F 1 "FT601Q" H 8500 1200 60  0000 C CNN
+F 2 "" H 8200 2200 60  0001 C CNN
+F 3 "" H 8200 2200 60  0001 C CNN
+	3    8400 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -570,7 +500,7 @@ F 3 "" H 4300 3500 50  0001 C CNN
 	1    4300 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 3100 2    60   Input ~ 0
+Text GLabel 3400 3100 2    60   Input ~ 0
 3v3
 Text Label 4100 3600 2    60   ~ 0
 Switch
@@ -580,7 +510,7 @@ U 1 1 5903CF5D
 P 2000 6000
 F 0 "U1" H 2000 6200 50  0000 L CNN
 F 1 "LM324" H 2000 5800 50  0000 L CNN
-F 2 "" H 1950 6100 50  0001 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 1950 6100 50  0001 C CNN
 F 3 "" H 2050 6200 50  0001 C CNN
 	1    2000 6000
 	1    0    0    -1  
@@ -642,7 +572,7 @@ Text Notes 3300 6800 0    60   ~ 0
 Set Vref to 1.3V 
 Text Notes 1300 5500 0    60   ~ 0
 Set Vref to .24V 
-Text HLabel 7900 3400 2    60   Input ~ 0
+Text HLabel 8000 3300 2    60   Input ~ 0
 CLK
 Text Label 4700 6000 2    60   ~ 0
 1.5A_DET
@@ -670,12 +600,8 @@ F 3 "" H 1200 7350 50  0001 C CNN
 	1    1200 7350
 	0    1    1    0   
 $EndComp
-Text HLabel 7900 3500 2    60   Input ~ 0
+Text HLabel 8200 3700 2    60   Input ~ 0
 BE_Array
-Wire Bus Line
-	7800 3500 7800 3800
-Wire Bus Line
-	7800 3500 7900 3500
 Wire Wire Line
 	800  7350 1000 7350
 Wire Wire Line
@@ -733,7 +659,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3100 3300 3200
 Wire Wire Line
-	3600 3100 3300 3100
+	3400 3100 3300 3100
 Wire Wire Line
 	4300 3500 3700 3500
 Wire Wire Line
@@ -851,93 +777,77 @@ Wire Wire Line
 Wire Wire Line
 	1200 1200 1600 1200
 Wire Wire Line
-	9000 3000 9200 3000
+	8800 3000 9100 3000
 Wire Wire Line
-	9000 2900 9200 2900
+	8800 2900 9100 2900
 Wire Wire Line
-	9000 2800 9200 2800
+	8800 2800 9100 2800
 Wire Wire Line
-	9000 2700 9200 2700
+	8800 2700 9100 2700
 Wire Wire Line
-	9000 2600 9200 2600
+	8800 2600 9100 2600
 Wire Wire Line
-	9000 2500 9200 2500
+	8800 2500 9100 2500
 Wire Wire Line
-	9000 2400 9200 2400
+	8800 2400 9100 2400
 Wire Wire Line
-	9200 2300 9000 2300
+	9100 2300 8800 2300
 Wire Wire Line
-	9000 2100 9200 2100
+	8800 2100 9100 2100
 Wire Wire Line
-	9200 2000 9000 2000
+	9100 2000 8800 2000
 Wire Wire Line
-	9200 1900 9000 1900
+	9100 1900 8800 1900
 Wire Wire Line
-	9000 1800 9200 1800
+	8800 1800 9100 1800
 Wire Wire Line
-	9000 1700 9200 1700
+	8800 1700 9100 1700
 Wire Wire Line
-	9000 1600 9200 1600
+	8800 1600 9100 1600
 Wire Wire Line
-	9000 1500 9200 1500
+	8800 1500 9100 1500
 Wire Wire Line
-	9000 1400 9200 1400
-Wire Bus Line
-	9300 1300 9300 2900
-Wire Bus Line
-	9800 1300 9300 1300
+	8800 1400 9100 1400
 Wire Wire Line
-	9200 6000 9000 6000
+	8900 6000 9200 6000
 Wire Wire Line
-	9200 5900 9000 5900
+	8900 5900 9200 5900
 Wire Wire Line
-	9200 5800 9000 5800
+	8900 5800 9200 5800
 Wire Wire Line
-	9200 5700 9000 5700
+	8900 5700 9200 5700
 Wire Wire Line
-	9200 5600 9000 5600
+	8900 5600 9200 5600
 Wire Wire Line
-	9000 5500 9200 5500
+	8900 5500 9200 5500
 Wire Wire Line
-	9200 5400 9000 5400
+	8900 5400 9200 5400
 Wire Wire Line
-	9000 5300 9200 5300
+	8900 5300 9200 5300
 Wire Wire Line
-	9000 5100 9200 5100
+	8900 5100 9200 5100
 Wire Wire Line
-	9000 5000 9200 5000
+	8900 5000 9200 5000
 Wire Wire Line
-	9000 4900 9200 4900
+	8900 4900 9200 4900
 Wire Wire Line
-	9000 4800 9200 4800
+	8900 4800 9200 4800
 Wire Wire Line
-	9000 4700 9200 4700
+	8900 4700 9200 4700
 Wire Wire Line
-	9000 4600 9200 4600
+	8900 4600 9200 4600
 Wire Wire Line
-	9000 4500 9200 4500
+	8900 4500 9200 4500
 Wire Wire Line
-	9000 4400 9200 4400
-Wire Bus Line
-	9800 4300 9300 4300
-Wire Bus Line
-	9300 4300 9300 5900
-Entry Wire Line
-	7700 3900 7800 3800
-Entry Wire Line
-	7700 3800 7800 3700
-Entry Wire Line
-	7700 3700 7800 3600
-Entry Wire Line
-	7700 3600 7800 3500
+	8900 4400 9200 4400
 Wire Wire Line
-	7300 3600 7700 3600
+	7300 3600 7800 3600
 Wire Wire Line
-	7300 3700 7700 3700
+	7300 3700 7800 3700
 Wire Wire Line
-	7300 3800 7700 3800
+	7300 3800 7800 3800
 Wire Wire Line
-	7300 3900 7700 3900
+	7300 3900 7800 3900
 Text Label 7400 3600 0    60   ~ 0
 BE_0
 Text Label 7400 3700 0    60   ~ 0
@@ -947,7 +857,7 @@ BE_2
 Text Label 7400 3900 0    60   ~ 0
 BE_3
 Wire Wire Line
-	7800 3400 7900 3400
+	7800 3400 7900 3300
 Text HLabel 7600 4000 2    60   Input ~ 0
 ~TXE
 Text HLabel 7600 4100 2    60   Input ~ 0
@@ -989,7 +899,7 @@ Wire Wire Line
 	7100 2900 7100 2500
 Connection ~ 7100 2500
 Wire Wire Line
-	5600 3100 6200 3100
+	5800 3100 6200 3100
 $Comp
 L C_Small C3
 U 1 1 590928A7
@@ -1233,4 +1143,80 @@ Text HLabel 4700 6000 2    60   Input ~ 0
 1.5A_DET
 Text HLabel 4700 7300 2    60   Input ~ 0
 3A_DET
+Wire Wire Line
+	7900 3300 8000 3300
+Text GLabel 5800 3100 0    60   Input ~ 0
+5v
+Text GLabel 9200 6000 2    60   Input ~ 0
+D0
+Text GLabel 9200 5900 2    60   Input ~ 0
+D1
+Text GLabel 9200 5800 2    60   Input ~ 0
+D2
+Text GLabel 9200 5700 2    60   Input ~ 0
+D3
+Text GLabel 9200 5600 2    60   Input ~ 0
+D4
+Text GLabel 9200 5500 2    60   Input ~ 0
+D5
+Text GLabel 9200 5400 2    60   Input ~ 0
+D6
+Text GLabel 9200 5300 2    60   Input ~ 0
+D7
+Text GLabel 9200 5100 2    60   Input ~ 0
+D8
+Text GLabel 9200 5000 2    60   Input ~ 0
+D9
+Text GLabel 9200 4900 2    60   Input ~ 0
+D10
+Text GLabel 9200 4800 2    60   Input ~ 0
+D11
+Text GLabel 9200 4700 2    60   Input ~ 0
+D12
+Text GLabel 9200 4600 2    60   Input ~ 0
+D13
+Text GLabel 9200 4500 2    60   Input ~ 0
+D14
+Text GLabel 9200 4400 2    60   Input ~ 0
+D15
+Text GLabel 9100 3000 2    60   Input ~ 0
+D16
+Text GLabel 9100 2900 2    60   Input ~ 0
+D17
+Text GLabel 9100 2800 2    60   Input ~ 0
+D18
+Text GLabel 9100 2700 2    60   Input ~ 0
+D19
+Text GLabel 9100 2600 2    60   Input ~ 0
+D20
+Text GLabel 9100 2500 2    60   Input ~ 0
+D21
+Text GLabel 9100 2400 2    60   Input ~ 0
+D22
+Text GLabel 9100 2300 2    60   Input ~ 0
+D23
+Text GLabel 9100 2100 2    60   Input ~ 0
+D24
+Text GLabel 9100 2000 2    60   Input ~ 0
+D25
+Text GLabel 9100 1900 2    60   Input ~ 0
+D26
+Text GLabel 9100 1800 2    60   Input ~ 0
+D27
+Text GLabel 9100 1700 2    60   Input ~ 0
+D28
+Text GLabel 9100 1600 2    60   Input ~ 0
+D29
+Text GLabel 9100 1500 2    60   Input ~ 0
+D30
+Text GLabel 9100 1400 2    60   Input ~ 0
+D31
+Text GLabel 7800 3600 2    60   Input ~ 0
+BE_0
+Text GLabel 7800 3700 2    60   Input ~ 0
+BE_1
+Text GLabel 7800 3800 2    60   Input ~ 0
+BE_2
+Text GLabel 7800 3900 2    60   Input ~ 0
+BE_3
 $EndSCHEMATC
