@@ -31,7 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Homebrew
 LIBS:Super_Blaster_v0.1-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -67,9 +67,9 @@ F 3 "" H 1600 1000 60  0001 C CNN
 	6    1600 1000
 	1    0    0    -1  
 $EndComp
-Text HLabel 5100 1400 0    60   BiDi ~ 0
+Text HLabel 5200 2100 0    60   BiDi ~ 0
 DATA16-31
-Text HLabel 8300 2800 0    60   BiDi ~ 0
+Text HLabel 8500 900  0    60   BiDi ~ 0
 DATA0-15
 Text HLabel 5800 4000 0    60   BiDi ~ 0
 CLK
@@ -99,37 +99,31 @@ Text Label 3200 4600 0    60   ~ 0
 BE_2
 Text Label 3200 4700 0    60   ~ 0
 BE_3
-Text Label 9000 5800 0    60   ~ 0
-D0
-Text Label 9000 5600 0    60   ~ 0
-D1
-Text GLabel 8200 4900 0    60   Input ~ 0
-D2
-Text GLabel 8900 4900 0    60   Input ~ 0
+Text GLabel 9400 3900 0    60   Input ~ 0
 D3
-Text GLabel 8900 5300 0    60   Input ~ 0
+Text GLabel 9400 4100 0    60   Input ~ 0
 D4
-Text GLabel 8900 4700 0    60   Input ~ 0
+Text GLabel 9400 3400 0    60   Input ~ 0
 D5
-Text GLabel 8900 5500 0    60   Input ~ 0
+Text GLabel 9400 2800 0    60   Input ~ 0
 D6
-Text GLabel 8900 4300 0    60   Input ~ 0
+Text GLabel 9400 3000 0    60   Input ~ 0
 D7
-Text GLabel 8900 4500 0    60   Input ~ 0
+Text GLabel 9400 2900 0    60   Input ~ 0
 D8
-Text GLabel 8900 3900 0    60   Input ~ 0
+Text GLabel 9400 2500 0    60   Input ~ 0
 D9
-Text GLabel 8900 4100 0    60   Input ~ 0
+Text GLabel 9400 2100 0    60   Input ~ 0
 D10
-Text GLabel 8900 3700 0    60   Input ~ 0
+Text GLabel 9400 2300 0    60   Input ~ 0
 D11
-Text GLabel 8900 3800 0    60   Input ~ 0
+Text GLabel 9400 1700 0    60   Input ~ 0
 D12
-Text GLabel 8900 3400 0    60   Input ~ 0
+Text GLabel 9400 1200 0    60   Input ~ 0
 D13
-Text GLabel 8900 3100 0    60   Input ~ 0
+Text GLabel 9400 1300 0    60   Input ~ 0
 D14
-Text GLabel 8900 3000 0    60   Input ~ 0
+Text GLabel 9400 1000 0    60   Input ~ 0
 D15
 Text GLabel 6600 5700 0    60   Input ~ 0
 D16
@@ -215,10 +209,10 @@ F 3 "" V 6200 1000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Earth #PWR026
+L Earth #PWR27
 U 1 1 5910C679
 P 6200 1100
-F 0 "#PWR026" H 6200 850 50  0001 C CNN
+F 0 "#PWR27" H 6200 850 50  0001 C CNN
 F 1 "Earth" H 6200 950 50  0001 C CNN
 F 2 "" H 6200 1100 50  0001 C CNN
 F 3 "" H 6200 1100 50  0001 C CNN
@@ -245,10 +239,10 @@ F 3 "" H 1900 6800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR027
+L Earth #PWR26
 U 1 1 591371AB
 P 1500 7000
-F 0 "#PWR027" H 1500 6750 50  0001 C CNN
+F 0 "#PWR26" H 1500 6750 50  0001 C CNN
 F 1 "Earth" H 1500 6850 50  0001 C CNN
 F 2 "" H 1500 7000 50  0001 C CNN
 F 3 "" H 1500 7000 50  0001 C CNN
@@ -285,11 +279,11 @@ F 3 "" H 9400 900 60  0001 C CNN
 $EndComp
 Text GLabel 8700 6100 0    60   Input ~ 0
 3v3
-Text GLabel 8900 5800 0    60   Input ~ 0
+Text GLabel 9400 4700 0    60   Input ~ 0
 D0
-Text GLabel 8900 5600 0    60   Input ~ 0
+Text GLabel 9400 4300 0    60   Input ~ 0
 D1
-Text GLabel 8900 6000 0    60   Input ~ 0
+Text GLabel 9400 4500 0    60   Input ~ 0
 D2
 Wire Wire Line
 	3100 4400 4200 4400
@@ -301,10 +295,6 @@ Wire Wire Line
 	3100 4700 4200 4700
 Wire Wire Line
 	6600 4000 5800 4000
-Wire Wire Line
-	8900 5300 9400 5300
-Wire Wire Line
-	8900 4900 9400 4900
 Wire Wire Line
 	1500 1400 1600 1400
 Wire Wire Line
@@ -391,17 +381,17 @@ Wire Wire Line
 Wire Wire Line
 	2000 4500 2900 4500
 Wire Notes Line
-	5400 1500 5400 4700
+	5500 2200 5500 5700
 Wire Notes Line
-	5400 1500 5300 1400
+	5500 2200 5400 2100
 Wire Notes Line
-	5300 1400 5100 1400
+	5400 2100 5200 2100
 Wire Notes Line
-	8600 2900 8600 6000
+	8800 1000 8800 4700
 Wire Notes Line
-	8500 2800 8600 2900
+	8700 900  8800 1000
 Wire Notes Line
-	8300 2800 8500 2800
+	8500 900  8700 900 
 Wire Notes Line
 	1400 4100 1600 4100
 Wire Notes Line
@@ -437,34 +427,4 @@ Wire Wire Line
 	6100 4100 6600 4100
 Wire Wire Line
 	8700 6100 9400 6100
-Wire Wire Line
-	8900 5800 9400 5800
-Wire Wire Line
-	8900 5600 9400 5600
-Wire Wire Line
-	8900 6000 9400 6000
-Wire Wire Line
-	8900 5500 9400 5500
-Wire Wire Line
-	8900 4700 9400 4700
-Wire Wire Line
-	8900 4500 9400 4500
-Wire Wire Line
-	8900 4300 9400 4300
-Wire Wire Line
-	9400 4100 8900 4100
-Wire Wire Line
-	8900 3900 9400 3900
-Wire Wire Line
-	9400 3800 8900 3800
-Wire Wire Line
-	8900 3700 9400 3700
-Wire Wire Line
-	9400 3400 8900 3400
-Wire Wire Line
-	8900 3100 9400 3100
-Wire Wire Line
-	9400 3000 8900 3000
-Wire Wire Line
-	8900 2900 9400 2900
 $EndSCHEMATC
