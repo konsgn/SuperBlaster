@@ -101,11 +101,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Crystal_GND24
+# Crystal_GND24-RESCUE-Super_Blaster_v0.1
 #
-DEF Crystal_GND24 Y 0 40 Y N 1 F N
+DEF Crystal_GND24-RESCUE-Super_Blaster_v0.1 Y 0 40 Y N 1 F N
 F0 "Y" 125 200 50 H V L CNN
-F1 "Crystal_GND24" 125 125 50 H V L CNN
+F1 "Crystal_GND24-RESCUE-Super_Blaster_v0.1" 125 125 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

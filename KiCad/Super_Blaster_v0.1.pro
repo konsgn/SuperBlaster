@@ -1,4 +1,4 @@
-update=Thu 11 May 2017 10:50:15 AM EDT
+update=Tue 12 Dec 2017 11:42:05 AM EST
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,6 +6,25 @@ version=1
 NetIExt=net
 [general]
 version=1
+[pcbnew]
+version=1
+PageLayoutDescrFile=
+LastNetListRead=
+PadDrill=0.762
+PadDrillOvalY=0.762
+PadSizeH=1.524
+PadSizeV=1.524
+PcbTextSizeV=1.5
+PcbTextSizeH=1.5
+PcbTextThickness=0.3
+ModuleTextSizeV=1
+ModuleTextSizeH=1
+ModuleTextSizeThickness=0.15
+SolderMaskClearance=0.06
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.15
+ModuleOutlineThickness=0.15
 [eeschema]
 version=1
 LibDir=../../../../home/konstantin/src/KiCad-Schematic-Symbol-Libraries;../Symbols&Footprints
@@ -41,22 +60,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/media/Kondrive/KiCAD/Symbols&Footprints/Homebrew
-[pcbnew]
-version=1
-PageLayoutDescrFile=
-LastNetListRead=
-PadDrill=0.762
-PadDrillOvalY=0.762
-PadSizeH=1.524
-PadSizeV=1.524
-PcbTextSizeV=1.5
-PcbTextSizeH=1.5
-PcbTextThickness=0.3
-ModuleTextSizeV=1
-ModuleTextSizeH=1
-ModuleTextSizeThickness=0.15
-SolderMaskClearance=0.06
-SolderMaskMinWidth=0
-DrawSegmentWidth=0.2
-BoardOutlineThickness=0.15
-ModuleOutlineThickness=0.15

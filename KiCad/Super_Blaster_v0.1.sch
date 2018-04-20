@@ -129,6 +129,168 @@ Text Notes 1800 1200 0    60   ~ 0
 BeArray
 Text Notes 1800 1000 0    60   ~ 0
 Data Bus \nGlobal Pins
+Text Label 4300 1500 2    60   ~ 0
+MEM_SS
+Text Label 4300 1600 2    60   ~ 0
+MEM_SCK
+Text Label 4300 1700 2    60   ~ 0
+MEM_SDI
+Text Label 4300 1800 2    60   ~ 0
+MEM_SDO
+Text Label 4300 900  2    60   ~ 0
+~CRESET
+Text Label 4300 1000 2    60   ~ 0
+CBSEL_0
+Text Label 4300 1100 2    60   ~ 0
+CBSEL_1
+Text Label 5500 7300 2    60   ~ 0
+MEM_SS
+Text Label 4000 7300 0    60   ~ 0
+MEM_SCK
+Text Label 4000 7400 0    60   ~ 0
+MEM_SDI
+Text Label 5500 7400 2    60   ~ 0
+MEM_SDO
+Text Notes 2600 2400 0    60   ~ 0
+10
+Text Notes 2600 2300 0    60   ~ 0
+15
+Text Notes 2600 2200 0    60   ~ 0
+18
+Text Notes 2600 2100 0    60   ~ 0
+17
+Text Label 2500 2100 2    60   ~ 0
+GPIO0
+Text Label 2500 2200 2    60   ~ 0
+GPIO1
+Text Label 2500 2300 2    60   ~ 0
+~RESET
+Text Label 2500 2400 2    60   ~ 0
+~SIWU
+Text Label 2500 2500 2    60   ~ 0
+1.5A_DET
+Text Label 2500 2600 2    60   ~ 0
+3A_DET
+Text Label 5500 6000 0    60   ~ 0
+~SIWU
+Text Label 5500 5800 0    60   ~ 0
+~RESET
+Text Label 5500 5600 0    60   ~ 0
+GPIO0
+Text Label 5500 5500 0    60   ~ 0
+GPIO1
+Text Label 5500 6100 0    60   ~ 0
+1.5A_DET
+Text Label 5500 5100 0    60   ~ 0
+3A_DET
+Text GLabel 5800 6400 0    60   Input ~ 0
+3v3
+Text Label 5400 1400 0    60   ~ 0
+B3-04_3A
+Text Label 5400 1500 0    60   ~ 0
+B3-05_3B
+Text Label 5400 1600 0    60   ~ 0
+B3-06_4A
+Text Label 5400 1700 0    60   ~ 0
+B3-07_4B
+$Comp
+L CONN_02X10 J2
+U 1 1 5959604F
+P 1450 5650
+F 0 "J2" H 1450 6155 15  0000 C CNN
+F 1 "CONN_02X10" V 1450 5650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 1450 4450 50  0001 C CNN
+F 3 "" H 1450 4450 50  0001 C CNN
+	1    1450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X10 J4
+U 1 1 59596F6C
+P 1450 6950
+F 0 "J4" H 1450 7500 50  0000 C CNN
+F 1 "CONN_02X10" V 1450 6950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 1450 5750 50  0001 C CNN
+F 3 "" H 1450 5750 50  0001 C CNN
+	1    1450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X10 J3
+U 1 1 59597077
+P 3150 5650
+F 0 "J3" H 3150 6200 50  0000 C CNN
+F 1 "CONN_02X10" V 3150 5650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 3150 4450 50  0001 C CNN
+F 3 "" H 3150 4450 50  0001 C CNN
+	1    3150 5650
+	1    0    0    -1  
+$EndComp
+Text Notes 11300 500  0    60   ~ 0
+https://www.digikey.com/product-detail/en/texas-instruments/TXS0108EQPWRQ1/296-42401-1-ND/5356982\n
+$Comp
+L GND #PWR01
+U 1 1 5A0FB45B
+P 2900 3400
+F 0 "#PWR01" H 2900 3150 50  0001 C CNN
+F 1 "GND" H 2905 3227 50  0000 C CNN
+F 2 "" H 2900 3400 50  0001 C CNN
+F 3 "" H 2900 3400 50  0001 C CNN
+	1    2900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A0FB611
+P 4400 7600
+F 0 "#PWR02" H 4400 7350 50  0001 C CNN
+F 1 "GND" H 4405 7427 50  0000 C CNN
+F 2 "" H 4400 7600 50  0001 C CNN
+F 3 "" H 4400 7600 50  0001 C CNN
+	1    4400 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A0FC05D
+P 5100 7600
+F 0 "#PWR03" H 5100 7350 50  0001 C CNN
+F 1 "GND" H 5105 7427 50  0000 C CNN
+F 2 "" H 5100 7600 50  0001 C CNN
+F 3 "" H 5100 7600 50  0001 C CNN
+	1    5100 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A105366
+P 1200 7500
+F 0 "#PWR04" H 1200 7250 50  0001 C CNN
+F 1 "GND" H 1205 7327 50  0000 C CNN
+F 2 "" H 1200 7500 50  0001 C CNN
+F 3 "" H 1200 7500 50  0001 C CNN
+	1    1200 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5A105AF9
+P 1700 7500
+F 0 "#PWR05" H 1700 7250 50  0001 C CNN
+F 1 "GND" H 1705 7327 50  0000 C CNN
+F 2 "" H 1700 7500 50  0001 C CNN
+F 3 "" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 7200 0    60   Input ~ 0
+3v3
+Text GLabel 1800 7200 2    60   Input ~ 0
+3v3
+Text GLabel 1800 7300 2    60   Input ~ 0
+USB_V
+Text GLabel 1100 7300 0    60   Input ~ 0
+USB_V
 Wire Wire Line
 	1500 1100 2600 1100
 Wire Wire Line
@@ -199,14 +361,6 @@ Wire Wire Line
 	3800 1700 4300 1700
 Wire Wire Line
 	4300 1800 3800 1800
-Text Label 4300 1500 2    60   ~ 0
-MEM_SS
-Text Label 4300 1600 2    60   ~ 0
-MEM_SCK
-Text Label 4300 1700 2    60   ~ 0
-MEM_SDI
-Text Label 4300 1800 2    60   ~ 0
-MEM_SDO
 Wire Wire Line
 	2900 3400 3200 3400
 Wire Wire Line
@@ -217,12 +371,6 @@ Wire Wire Line
 	4300 1000 3800 1000
 Wire Wire Line
 	4300 1100 3800 1100
-Text Label 4300 900  2    60   ~ 0
-~CRESET
-Text Label 4300 1000 2    60   ~ 0
-CBSEL_0
-Text Label 4300 1100 2    60   ~ 0
-CBSEL_1
 Wire Wire Line
 	5500 6000 5900 6000
 Wire Wire Line
@@ -233,14 +381,6 @@ Wire Wire Line
 	4500 7400 4000 7400
 Wire Wire Line
 	5500 7400 5000 7400
-Text Label 5500 7300 2    60   ~ 0
-MEM_SS
-Text Label 4000 7300 0    60   ~ 0
-MEM_SCK
-Text Label 4000 7400 0    60   ~ 0
-MEM_SDI
-Text Label 5500 7400 2    60   ~ 0
-MEM_SDO
 Wire Wire Line
 	4500 7500 4400 7500
 Wire Wire Line
@@ -249,50 +389,16 @@ Wire Wire Line
 	5000 7500 5100 7500
 Wire Wire Line
 	5100 7500 5100 7600
-Text Notes 2600 2400 0    60   ~ 0
-10
-Text Notes 2600 2300 0    60   ~ 0
-15
-Text Notes 2600 2200 0    60   ~ 0
-18
-Text Notes 2600 2100 0    60   ~ 0
-17
-Text Label 2500 2100 2    60   ~ 0
-GPIO0
-Text Label 2500 2200 2    60   ~ 0
-GPIO1
-Text Label 2500 2300 2    60   ~ 0
-~RESET
-Text Label 2500 2400 2    60   ~ 0
-~SIWU
-Text Label 2500 2500 2    60   ~ 0
-1.5A_DET
-Text Label 2500 2600 2    60   ~ 0
-3A_DET
-Text Label 5500 6000 0    60   ~ 0
-~SIWU
-Text Label 5500 5800 0    60   ~ 0
-~RESET
-Text Label 5500 5600 0    60   ~ 0
-GPIO0
-Text Label 5500 5500 0    60   ~ 0
-GPIO1
 Wire Wire Line
 	5500 5800 5900 5800
 Wire Wire Line
 	5500 5600 5900 5600
 Wire Wire Line
 	5500 5500 5900 5500
-Text Label 5500 6100 0    60   ~ 0
-1.5A_DET
-Text Label 5500 5100 0    60   ~ 0
-3A_DET
 Wire Wire Line
 	5500 5100 5900 5100
 Wire Wire Line
 	5500 6100 5900 6100
-Text GLabel 5800 6400 0    60   Input ~ 0
-3v3
 Wire Wire Line
 	5800 6400 5900 6400
 Wire Wire Line
@@ -335,126 +441,22 @@ Wire Wire Line
 	5400 3000 5900 3000
 Wire Wire Line
 	5900 3100 5400 3100
-Text Label 5400 1400 0    60   ~ 0
-B3-04_3A
-Text Label 5400 1500 0    60   ~ 0
-B3-05_3B
-Text Label 5400 1600 0    60   ~ 0
-B3-06_4A
-Text Label 5400 1700 0    60   ~ 0
-B3-07_4B
-$Comp
-L CONN_02X10 J2
-U 1 1 5959604F
-P 1450 5650
-F 0 "J2" H 1450 6155 15  0000 C CNN
-F 1 "CONN_02X10" V 1450 5650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 1450 4450 50  0001 C CNN
-F 3 "" H 1450 4450 50  0001 C CNN
-	1    1450 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_02X10 J4
-U 1 1 59596F6C
-P 3050 5650
-F 0 "J4" H 3050 6200 50  0000 C CNN
-F 1 "CONN_02X10" V 3050 5650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 3050 4450 50  0001 C CNN
-F 3 "" H 3050 4450 50  0001 C CNN
-	1    3050 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_02X10 J3
-U 1 1 59597077
-P 1450 6950
-F 0 "J3" H 1450 7500 50  0000 C CNN
-F 1 "CONN_02X10" V 1450 6950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch1.27mm" H 1450 5750 50  0001 C CNN
-F 3 "" H 1450 5750 50  0001 C CNN
-	1    1450 6950
-	1    0    0    -1  
-$EndComp
-Text Notes 11300 500  0    60   ~ 0
-https://www.digikey.com/product-detail/en/texas-instruments/TXS0108EQPWRQ1/296-42401-1-ND/5356982\n
-$Comp
-L GND #PWR01
-U 1 1 5A0FB45B
-P 2900 3400
-F 0 "#PWR01" H 2900 3150 50  0001 C CNN
-F 1 "GND" H 2905 3227 50  0000 C CNN
-F 2 "" H 2900 3400 50  0001 C CNN
-F 3 "" H 2900 3400 50  0001 C CNN
-	1    2900 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 5A0FB611
-P 4400 7600
-F 0 "#PWR02" H 4400 7350 50  0001 C CNN
-F 1 "GND" H 4405 7427 50  0000 C CNN
-F 2 "" H 4400 7600 50  0001 C CNN
-F 3 "" H 4400 7600 50  0001 C CNN
-	1    4400 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 5A0FC05D
-P 5100 7600
-F 0 "#PWR03" H 5100 7350 50  0001 C CNN
-F 1 "GND" H 5105 7427 50  0000 C CNN
-F 2 "" H 5100 7600 50  0001 C CNN
-F 3 "" H 5100 7600 50  0001 C CNN
-	1    5100 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR04
-U 1 1 5A105366
-P 1200 7500
-F 0 "#PWR04" H 1200 7250 50  0001 C CNN
-F 1 "GND" H 1205 7327 50  0000 C CNN
-F 2 "" H 1200 7500 50  0001 C CNN
-F 3 "" H 1200 7500 50  0001 C CNN
-	1    1200 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR05
-U 1 1 5A105AF9
-P 1700 7500
-F 0 "#PWR05" H 1700 7250 50  0001 C CNN
-F 1 "GND" H 1705 7327 50  0000 C CNN
-F 2 "" H 1700 7500 50  0001 C CNN
-F 3 "" H 1700 7500 50  0001 C CNN
-	1    1700 7500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 7500 1200 7400
 Wire Wire Line
 	1700 7400 1700 7500
-Text GLabel 1100 7300 0    60   Input ~ 0
-3v3
-Text GLabel 1800 7300 2    60   Input ~ 0
-3v3
-Wire Wire Line
-	1100 7300 1200 7300
-Wire Wire Line
-	1700 7300 1800 7300
-Text GLabel 1800 7200 2    60   Input ~ 0
-USB_V
-Text GLabel 1100 7200 0    60   Input ~ 0
-USB_V
 Wire Wire Line
 	1100 7200 1200 7200
 Wire Wire Line
 	1700 7200 1800 7200
 Wire Wire Line
+	1100 7300 1200 7300
+Wire Wire Line
+	1700 7300 1800 7300
+Wire Wire Line
 	3200 3300 3100 3300
 Wire Wire Line
 	3100 3300 3100 3200
+NoConn ~ 3200 4000
+NoConn ~ 3200 3500
 $EndSCHEMATC
