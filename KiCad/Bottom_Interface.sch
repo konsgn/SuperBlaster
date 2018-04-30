@@ -71,7 +71,7 @@ Text HLabel 5200 3200 0    60   BiDi ~ 0
 DATA16-31
 Text HLabel 8500 900  0    60   BiDi ~ 0
 DATA0-15
-Text HLabel 8600 3700 0    60   BiDi ~ 0
+Text HLabel 8600 3600 0    60   BiDi ~ 0
 CLK
 Text HLabel 4500 2000 0    60   BiDi ~ 0
 BE_Array
@@ -117,37 +117,37 @@ Text GLabel 9400 3900 0    60   Input ~ 0
 D14
 Text GLabel 9400 4100 0    60   Input ~ 0
 D15
-Text GLabel 9400 3400 0    60   Input ~ 0
-D16
 Text GLabel 9400 2800 0    60   Input ~ 0
+D16
+Text GLabel 9400 3400 0    60   Input ~ 0
 D17
-Text GLabel 9400 3000 0    60   Input ~ 0
-D18
 Text GLabel 9400 2900 0    60   Input ~ 0
+D18
+Text GLabel 9400 3000 0    60   Input ~ 0
 D19
-Text GLabel 9400 2500 0    60   Input ~ 0
+Text GLabel 9400 1900 0    60   Input ~ 0
 D20
-Text GLabel 9400 2100 0    60   Input ~ 0
+Text GLabel 9400 2500 0    60   Input ~ 0
 D21
 Text GLabel 9400 2300 0    60   Input ~ 0
 D22
-Text GLabel 9400 1700 0    60   Input ~ 0
+Text GLabel 9400 2100 0    60   Input ~ 0
 D23
-Text GLabel 9400 1200 0    60   Input ~ 0
+Text GLabel 9400 1500 0    60   Input ~ 0
 D24
-Text GLabel 9400 1300 0    60   Input ~ 0
+Text GLabel 9400 1700 0    60   Input ~ 0
 D25
-Text GLabel 9400 1000 0    60   Input ~ 0
+Text GLabel 9400 1200 0    60   Input ~ 0
 D26
-Text GLabel 6600 5700 0    60   Input ~ 0
+Text GLabel 9400 1300 0    60   Input ~ 0
 D27
-Text GLabel 6600 5500 0    60   Input ~ 0
+Text GLabel 9400 1100 0    60   Input ~ 0
 D28
-Text GLabel 6600 4900 0    60   Input ~ 0
+Text GLabel 6600 5700 0    60   Input ~ 0
 D29
-Text GLabel 6600 5000 0    60   Input ~ 0
+Text GLabel 9400 1000 0    60   Input ~ 0
 D30
-Text GLabel 6600 5200 0    60   Input ~ 0
+Text GLabel 9400 900  0    60   Input ~ 0
 D31
 Text HLabel 1300 1300 0    60   Input ~ 0
 MEM_SS
@@ -201,10 +201,10 @@ F 3 "" V 6200 1000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Earth #PWR031
+L Earth #PWR037
 U 1 1 5910C679
 P 6200 1100
-F 0 "#PWR031" H 6200 850 50  0001 C CNN
+F 0 "#PWR037" H 6200 850 50  0001 C CNN
 F 1 "Earth" H 6200 950 50  0001 C CNN
 F 2 "" H 6200 1100 50  0001 C CNN
 F 3 "" H 6200 1100 50  0001 C CNN
@@ -267,7 +267,7 @@ D1
 Text GLabel 9400 6000 0    60   Input ~ 0
 D2
 Wire Wire Line
-	9400 3700 8600 3700
+	9400 3700 9300 3700
 Wire Wire Line
 	1500 1400 1600 1400
 Wire Wire Line
@@ -355,14 +355,16 @@ Wire Wire Line
 Wire Wire Line
 	5900 1200 5900 1300
 $Comp
-L GND #PWR032
+L GND #PWR038
 U 1 1 5A95A0BA
 P 1500 7000
-F 0 "#PWR032" H 1500 6750 50  0001 C CNN
+F 0 "#PWR038" H 1500 6750 50  0001 C CNN
 F 1 "GND" H 1500 6850 50  0000 C CNN
 F 2 "" H 1500 7000 50  0001 C CNN
 F 3 "" H 1500 7000 50  0001 C CNN
 	1    1500 7000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8600 3600 9400 3600
 $EndSCHEMATC
