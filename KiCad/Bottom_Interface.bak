@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:Super_Blaster_v0.1-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Homebrew
+EESchema Schematic File Version 4
 LIBS:Super_Blaster_v0.1-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L iCE40-HX8K-CT256 U2
+L Homebrew:iCE40-HX8K-CT256 U2
 U 4 1 59073192
 P 6600 1200
 F 0 "U2" H 6800 1450 60  0000 L CNN
@@ -57,7 +26,7 @@ F 3 "" H 6600 1200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L iCE40-HX8K-CT256 U2
+L Homebrew:iCE40-HX8K-CT256 U2
 U 6 1 59079EB8
 P 1600 1000
 F 0 "U2" H 1800 1250 60  0000 L CNN
@@ -158,9 +127,11 @@ MEM_SDI
 Text HLabel 1300 1000 0    60   Input ~ 0
 MEM_SDO
 $Comp
-L R_Small R9
+L Super_Blaster_v0.1-rescue:R_Small R9
 U 1 1 5910B4D4
 P 5800 1100
+AR Path="/5910B4D4" Ref="R9"  Part="1" 
+AR Path="/59072317/5910B4D4" Ref="R9"  Part="1" 
 F 0 "R9" H 5830 1120 50  0000 L CNN
 F 1 "10k" H 5830 1060 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 5800 1100 50  0001 C CNN
@@ -177,9 +148,11 @@ CBSEL_0
 Text HLabel 5300 5900 0    60   Input ~ 0
 CBSEL_1
 $Comp
-L R_Small R10
+L Super_Blaster_v0.1-rescue:R_Small R10
 U 1 1 5910BCF1
 P 6300 900
+AR Path="/5910BCF1" Ref="R10"  Part="1" 
+AR Path="/59072317/5910BCF1" Ref="R10"  Part="1" 
 F 0 "R10" H 6330 920 50  0000 L CNN
 F 1 "10k" H 6330 860 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 6300 900 50  0001 C CNN
@@ -198,12 +171,12 @@ BE_2
 Text GLabel 6600 4300 0    60   Input ~ 0
 BE_3
 $Comp
-L CLOCK_EN M1
+L Homebrew:CLOCK_EN M1
 U 1 1 59136E59
 P 1900 6800
 F 0 "M1" H 1750 6900 45  0000 C CNN
 F 1 "CLOCK_EN" H 1900 6600 45  0001 C CNN
-F 2 "Crystals:Crystal_SMD_EuroQuartz_MT-4pin_3.2x2.5mm" H 1900 6800 20  0001 C CNN
+F 2 "Crystals:Crystal_SMD_2520-4pin_2.5x2.0mm" H 1900 6800 20  0001 C CNN
 F 3 "" H 1900 6800 60  0001 C CNN
 	1    1900 6800
 	1    0    0    -1  
@@ -213,9 +186,11 @@ Text Label 2700 6900 2    60   ~ 0
 Text GLabel 2500 6700 2    60   Input ~ 0
 3v3
 $Comp
-L C_Small C9
+L Super_Blaster_v0.1-rescue:C_Small C9
 U 1 1 591375CF
 P 1300 6800
+AR Path="/591375CF" Ref="C9"  Part="1" 
+AR Path="/59072317/591375CF" Ref="C9"  Part="1" 
 F 0 "C9" H 1310 6870 50  0000 L CNN
 F 1 ".1uF" H 1310 6720 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 1300 6800 50  0001 C CNN
@@ -226,12 +201,12 @@ $EndComp
 Text Label 6100 4100 0    60   ~ 0
 50MHz
 $Comp
-L iCE40-HX8K-CT256 U2
+L Homebrew:iCE40-HX8K-CT256 U2
 U 3 1 591E22F9
 P 9400 900
 F 0 "U2" H 9600 1150 60  0000 L CNN
 F 1 "iCE40-HX8K-CT256" H 9600 1050 60  0000 L CNN
-F 2 "" H 9400 900 60  0001 C CNN
+F 2 "Homebrew:caBGA_256_.8p_14x14mm" H 9400 900 60  0001 C CNN
 F 3 "" H 9400 900 60  0001 C CNN
 	3    9400 900 
 	1    0    0    -1  
@@ -245,10 +220,10 @@ D1
 Text GLabel 9400 6000 0    60   Input ~ 0
 D2
 $Comp
-L GND #PWR54
+L power:GND #PWR055
 U 1 1 5A95A0BA
 P 1500 7000
-F 0 "#PWR54" H 1500 6750 50  0001 C CNN
+F 0 "#PWR055" H 1500 6750 50  0001 C CNN
 F 1 "GND" H 1500 6850 50  0000 C CNN
 F 2 "" H 1500 7000 50  0001 C CNN
 F 3 "" H 1500 7000 50  0001 C CNN
@@ -270,9 +245,11 @@ Text HLabel 6600 5500 0    60   Input ~ 0
 Text HLabel 6600 4900 0    60   Input ~ 0
 3A_DET
 $Comp
-L C_Small C30
+L Super_Blaster_v0.1-rescue:C_Small C30
 U 1 1 5AFE04CF
 P 5800 6200
+AR Path="/5AFE04CF" Ref="C30"  Part="1" 
+AR Path="/59072317/5AFE04CF" Ref="C30"  Part="1" 
 F 0 "C30" H 5810 6270 50  0000 L CNN
 F 1 ".1u" H 5810 6120 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 5800 6200 50  0001 C CNN
@@ -281,9 +258,11 @@ F 3 "" H 5800 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C31
+L Super_Blaster_v0.1-rescue:C_Small C31
 U 1 1 5AFE057F
 P 6000 6200
+AR Path="/5AFE057F" Ref="C31"  Part="1" 
+AR Path="/59072317/5AFE057F" Ref="C31"  Part="1" 
 F 0 "C31" H 6010 6270 50  0000 L CNN
 F 1 ".1u" H 6010 6120 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 6000 6200 50  0001 C CNN
@@ -292,9 +271,11 @@ F 3 "" H 6000 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C32
+L Super_Blaster_v0.1-rescue:C_Small C32
 U 1 1 5AFE05AA
 P 6200 6200
+AR Path="/5AFE05AA" Ref="C32"  Part="1" 
+AR Path="/59072317/5AFE05AA" Ref="C32"  Part="1" 
 F 0 "C32" H 6210 6270 50  0000 L CNN
 F 1 ".1u" H 6210 6120 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 6200 6200 50  0001 C CNN
@@ -303,9 +284,11 @@ F 3 "" H 6200 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C33
+L Super_Blaster_v0.1-rescue:C_Small C33
 U 1 1 5AFE05D8
 P 6400 6200
+AR Path="/5AFE05D8" Ref="C33"  Part="1" 
+AR Path="/59072317/5AFE05D8" Ref="C33"  Part="1" 
 F 0 "C33" H 6410 6270 50  0000 L CNN
 F 1 ".1u" H 6410 6120 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 6400 6200 50  0001 C CNN
@@ -314,9 +297,11 @@ F 3 "" H 6400 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C34
+L Super_Blaster_v0.1-rescue:C_Small C34
 U 1 1 5AFE0770
 P 8700 6300
+AR Path="/5AFE0770" Ref="C34"  Part="1" 
+AR Path="/59072317/5AFE0770" Ref="C34"  Part="1" 
 F 0 "C34" H 8710 6370 50  0000 L CNN
 F 1 ".1u" H 8710 6220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 8700 6300 50  0001 C CNN
@@ -325,9 +310,11 @@ F 3 "" H 8700 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C35
+L Super_Blaster_v0.1-rescue:C_Small C35
 U 1 1 5AFE0776
 P 8900 6300
+AR Path="/5AFE0776" Ref="C35"  Part="1" 
+AR Path="/59072317/5AFE0776" Ref="C35"  Part="1" 
 F 0 "C35" H 8910 6370 50  0000 L CNN
 F 1 ".1u" H 8910 6220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 8900 6300 50  0001 C CNN
@@ -336,9 +323,11 @@ F 3 "" H 8900 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C36
+L Super_Blaster_v0.1-rescue:C_Small C36
 U 1 1 5AFE077C
 P 9100 6300
+AR Path="/5AFE077C" Ref="C36"  Part="1" 
+AR Path="/59072317/5AFE077C" Ref="C36"  Part="1" 
 F 0 "C36" H 9110 6370 50  0000 L CNN
 F 1 ".1u" H 9110 6220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 9100 6300 50  0001 C CNN
@@ -347,9 +336,11 @@ F 3 "" H 9100 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C37
+L Super_Blaster_v0.1-rescue:C_Small C37
 U 1 1 5AFE0782
 P 9300 6300
+AR Path="/5AFE0782" Ref="C37"  Part="1" 
+AR Path="/59072317/5AFE0782" Ref="C37"  Part="1" 
 F 0 "C37" H 9310 6370 50  0000 L CNN
 F 1 ".1u" H 9310 6220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 9300 6300 50  0001 C CNN
@@ -358,10 +349,10 @@ F 3 "" H 9300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR55
+L power:GND #PWR056
 U 1 1 5AFE08C3
 P 5600 6200
-F 0 "#PWR55" H 5600 5950 50  0001 C CNN
+F 0 "#PWR056" H 5600 5950 50  0001 C CNN
 F 1 "GND" H 5600 6050 50  0000 C CNN
 F 2 "" H 5600 6200 50  0001 C CNN
 F 3 "" H 5600 6200 50  0001 C CNN
@@ -369,10 +360,10 @@ F 3 "" H 5600 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR56
+L power:GND #PWR057
 U 1 1 5AFE0928
 P 8500 6300
-F 0 "#PWR56" H 8500 6050 50  0001 C CNN
+F 0 "#PWR057" H 8500 6050 50  0001 C CNN
 F 1 "GND" H 8500 6150 50  0000 C CNN
 F 2 "" H 8500 6300 50  0001 C CNN
 F 3 "" H 8500 6300 50  0001 C CNN
@@ -382,17 +373,9 @@ $EndComp
 Wire Wire Line
 	9400 3700 9300 3700
 Wire Wire Line
-	1400 1400 1600 1400
+	1400 1400 1500 1400
 Wire Wire Line
 	5600 6000 5800 6000
-Wire Wire Line
-	5800 6000 6000 6000
-Wire Wire Line
-	6000 6000 6200 6000
-Wire Wire Line
-	6200 6000 6400 6000
-Wire Wire Line
-	6400 6000 6600 6000
 Wire Wire Line
 	1300 1000 1600 1000
 Wire Wire Line
@@ -403,8 +386,6 @@ Wire Wire Line
 	1600 1300 1300 1300
 Wire Wire Line
 	5700 1300 5800 1300
-Wire Wire Line
-	5800 1300 6600 1300
 Connection ~ 5800 1300
 Wire Wire Line
 	5700 1000 5800 1000
@@ -417,17 +398,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 700  6500 900 
 Wire Wire Line
-	6500 900  6500 1200
-Wire Wire Line
 	6100 900  6200 900 
-Wire Wire Line
-	6600 5000 6600 5000
-Wire Wire Line
-	6600 5200 6600 5200
-Wire Wire Line
-	6600 4800 6600 4800
-Wire Wire Line
-	6600 4300 6600 4300
 Wire Notes Line
 	5500 3300 5500 5700
 Wire Notes Line
@@ -445,8 +416,6 @@ Wire Notes Line
 Wire Notes Line
 	4700 2000 4800 2100
 Wire Notes Line
-	4800 2100 4800 2100
-Wire Notes Line
 	4800 2100 4800 2400
 Wire Wire Line
 	2700 6900 2200 6900
@@ -455,22 +424,16 @@ Wire Wire Line
 Wire Wire Line
 	2300 6600 2300 6700
 Wire Wire Line
-	2300 6700 2300 6800
-Wire Wire Line
 	2300 6700 2500 6700
 Wire Wire Line
 	1500 6800 1600 6800
 Wire Wire Line
 	1500 6600 1500 6700
 Wire Wire Line
-	1500 6700 1500 6800
-Wire Wire Line
 	1500 6600 2300 6600
 Connection ~ 2300 6700
 Wire Wire Line
 	1300 6900 1500 6900
-Wire Wire Line
-	1500 6900 1600 6900
 Wire Wire Line
 	1500 6900 1500 7000
 Wire Wire Line
@@ -481,14 +444,6 @@ Wire Wire Line
 	6100 4100 6600 4100
 Wire Wire Line
 	8400 6100 8700 6100
-Wire Wire Line
-	8700 6100 8900 6100
-Wire Wire Line
-	8900 6100 9100 6100
-Wire Wire Line
-	9100 6100 9300 6100
-Wire Wire Line
-	9300 6100 9400 6100
 Wire Wire Line
 	5800 1200 5800 1300
 Wire Wire Line
@@ -504,12 +459,6 @@ Wire Wire Line
 	8600 6300 8600 6500
 Wire Wire Line
 	8600 6500 8700 6500
-Wire Wire Line
-	8700 6500 8900 6500
-Wire Wire Line
-	8900 6500 9100 6500
-Wire Wire Line
-	9100 6500 9300 6500
 Wire Wire Line
 	9300 6500 9300 6400
 Wire Wire Line
@@ -540,12 +489,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 6400 5800 6400
 Wire Wire Line
-	5800 6400 6000 6400
-Wire Wire Line
-	6000 6400 6200 6400
-Wire Wire Line
-	6200 6400 6400 6400
-Wire Wire Line
 	6400 6400 6400 6300
 Wire Wire Line
 	6200 6300 6200 6400
@@ -569,10 +512,12 @@ Wire Wire Line
 	6400 6100 6400 6000
 Connection ~ 6400 6000
 $Comp
-L C_Small C?
+L Super_Blaster_v0.1-rescue:C_Small C44
 U 1 1 5B27A4D1
 P 1500 1500
-F 0 "C?" H 1510 1570 50  0000 L CNN
+AR Path="/5B27A4D1" Ref="C44"  Part="1" 
+AR Path="/59072317/5B27A4D1" Ref="C44"  Part="1" 
+F 0 "C44" H 1510 1570 50  0000 L CNN
 F 1 ".1u" H 1510 1420 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402_NoSilk" H 1500 1500 50  0001 C CNN
 F 3 "" H 1500 1500 50  0001 C CNN
@@ -580,10 +525,10 @@ F 3 "" H 1500 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR054
 U 1 1 5B27A6F7
 P 1500 1600
-F 0 "#PWR?" H 1500 1350 50  0001 C CNN
+F 0 "#PWR054" H 1500 1350 50  0001 C CNN
 F 1 "GND" H 1500 1450 50  0000 C CNN
 F 2 "" H 1500 1600 50  0001 C CNN
 F 3 "" H 1500 1600 50  0001 C CNN
@@ -591,4 +536,44 @@ F 3 "" H 1500 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1500 1400
+Wire Wire Line
+	5800 1300 6600 1300
+Wire Wire Line
+	2300 6700 2300 6800
+Wire Wire Line
+	1500 6700 1500 6800
+Wire Wire Line
+	1500 6900 1600 6900
+Wire Wire Line
+	6500 900  6500 1200
+Wire Wire Line
+	9100 6500 9300 6500
+Wire Wire Line
+	8900 6500 9100 6500
+Wire Wire Line
+	8700 6500 8900 6500
+Wire Wire Line
+	9300 6100 9400 6100
+Wire Wire Line
+	9100 6100 9300 6100
+Wire Wire Line
+	8900 6100 9100 6100
+Wire Wire Line
+	8700 6100 8900 6100
+Wire Wire Line
+	6200 6400 6400 6400
+Wire Wire Line
+	6000 6400 6200 6400
+Wire Wire Line
+	5800 6400 6000 6400
+Wire Wire Line
+	5800 6000 6000 6000
+Wire Wire Line
+	6000 6000 6200 6000
+Wire Wire Line
+	6200 6000 6400 6000
+Wire Wire Line
+	6400 6000 6600 6000
+Wire Wire Line
+	1500 1400 1600 1400
 $EndSCHEMATC

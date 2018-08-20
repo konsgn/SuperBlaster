@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:Super_Blaster_v0.1-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Homebrew
+EESchema Schematic File Version 4
 LIBS:Super_Blaster_v0.1-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_TypeC_AMP_12401610E4#2A J1
+L Homebrew:USB_TypeC_AMP_12401610E4#2A J1
 U 1 1 590111D1
 P 2200 1600
 F 0 "J1" H 1850 2200 60  0000 C CNN
@@ -153,10 +122,10 @@ USB_D_N
 Text Label 3300 1700 2    60   ~ 0
 USB_D_P
 $Comp
-L Earth #PWR33
+L power:Earth #PWR033
 U 1 1 590216D0
 P 1900 2500
-F 0 "#PWR33" H 1900 2250 50  0001 C CNN
+F 0 "#PWR033" H 1900 2250 50  0001 C CNN
 F 1 "Earth" H 1900 2350 50  0001 C CNN
 F 2 "" H 1900 2500 50  0001 C CNN
 F 3 "" H 1900 2500 50  0001 C CNN
@@ -176,7 +145,7 @@ USB_D_P
 Text Label 5700 3800 0    60   ~ 0
 USB_D_N
 $Comp
-L FUSB340 U3
+L Homebrew:FUSB340 U3
 U 1 1 590272CD
 P 3200 3800
 F 0 "U3" H 2900 4300 60  0000 C CNN
@@ -223,31 +192,33 @@ USB Type C Connector
 Text Notes 1800 3000 0    60   ~ 0
 USB Super Speed Switch to select active channels
 $Comp
-L FT601Q U4
+L Homebrew:FT601Q U4
 U 2 1 59028949
 P 8500 5200
 F 0 "U4" H 8600 4300 60  0000 C CNN
 F 1 "FT601Q" H 8600 4200 60  0000 C CNN
-F 2 "" H 8300 5200 60  0001 C CNN
+F 2 "Homebrew:QFN_76_PAD" H 8300 5200 60  0001 C CNN
 F 3 "" H 8300 5200 60  0001 C CNN
 	2    8500 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L FT601Q U4
+L Homebrew:FT601Q U4
 U 3 1 590299B6
 P 8400 2200
 F 0 "U4" H 8500 1300 60  0000 C CNN
 F 1 "FT601Q" H 8500 1200 60  0000 C CNN
-F 2 "" H 8200 2200 60  0001 C CNN
+F 2 "Homebrew:QFN_76_PAD" H 8200 2200 60  0001 C CNN
 F 3 "" H 8200 2200 60  0001 C CNN
 	3    8400 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R1
+L Super_Blaster_v0.1-rescue:R_Small R1
 U 1 1 5903772D
 P 900 1600
+AR Path="/5903772D" Ref="R1"  Part="1" 
+AR Path="/5900EC3E/5903772D" Ref="R1"  Part="1" 
 F 0 "R1" H 930 1620 50  0000 L CNN
 F 1 "5.1K_10%" H 930 1560 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 900 1600 50  0001 C CNN
@@ -256,9 +227,11 @@ F 3 "" H 900 1600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L Super_Blaster_v0.1-rescue:R_Small R6
 U 1 1 590377E4
 P 3600 1900
+AR Path="/590377E4" Ref="R6"  Part="1" 
+AR Path="/5900EC3E/590377E4" Ref="R6"  Part="1" 
 F 0 "R6" H 3630 1920 50  0000 L CNN
 F 1 "5.1K_10%" H 3630 1860 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 3600 1900 50  0001 C CNN
@@ -267,9 +240,11 @@ F 3 "" H 3600 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R2
+L Super_Blaster_v0.1-rescue:R_Small R2
 U 1 1 59039523
 P 3300 6000
+AR Path="/59039523" Ref="R2"  Part="1" 
+AR Path="/5900EC3E/59039523" Ref="R2"  Part="1" 
 F 0 "R2" H 3330 6020 50  0000 L CNN
 F 1 "?" H 3330 5960 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 3300 6000 50  0001 C CNN
@@ -278,9 +253,11 @@ F 3 "" H 3300 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R3
+L Super_Blaster_v0.1-rescue:R_Small R3
 U 1 1 590395A1
 P 3300 6200
+AR Path="/590395A1" Ref="R3"  Part="1" 
+AR Path="/5900EC3E/590395A1" Ref="R3"  Part="1" 
 F 0 "R3" H 3330 6220 50  0000 L CNN
 F 1 "?" H 3330 6160 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 3300 6200 50  0001 C CNN
@@ -289,9 +266,11 @@ F 3 "" H 3300 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R4
+L Super_Blaster_v0.1-rescue:R_Small R4
 U 1 1 590395E4
 P 3300 7300
+AR Path="/590395E4" Ref="R4"  Part="1" 
+AR Path="/5900EC3E/590395E4" Ref="R4"  Part="1" 
 F 0 "R4" H 3330 7320 50  0000 L CNN
 F 1 "?" H 3330 7260 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 3300 7300 50  0001 C CNN
@@ -300,9 +279,11 @@ F 3 "" H 3300 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R5
+L Super_Blaster_v0.1-rescue:R_Small R5
 U 1 1 5903963C
 P 3300 7500
+AR Path="/5903963C" Ref="R5"  Part="1" 
+AR Path="/5900EC3E/5903963C" Ref="R5"  Part="1" 
 F 0 "R5" H 3330 7520 50  0000 L CNN
 F 1 "?" H 3330 7460 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 3300 7500 50  0001 C CNN
@@ -318,68 +299,20 @@ Text Label 3500 5900 0    60   ~ 0
 CCV
 Text Label 3500 7200 0    60   ~ 0
 CCV
-Text GLabel 2200 6800 2    60   Input ~ 0
+Text GLabel 3200 5800 0    60   Input ~ 0
 3v3
-Text GLabel 4100 5600 2    60   Input ~ 0
-3v3
-Text GLabel 4100 6900 2    60   Input ~ 0
+Text GLabel 3200 7100 0    60   Input ~ 0
 3v3
 Text GLabel 3400 3100 2    60   Input ~ 0
 3v3
 Text Label 4100 3600 2    60   ~ 0
 Switch
-$Comp
-L LM324 U1
-U 1 1 5903CF5D
-P 2000 6000
-F 0 "U1" H 2000 6200 50  0000 L CNN
-F 1 "LM324" H 2000 5800 50  0000 L CNN
-F 2 "Homebrew:Homebrew-HV-QFN-16" H 1950 6100 50  0001 C CNN
-F 3 "" H 2050 6200 50  0001 C CNN
-	1    2000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM324 U1
-U 2 1 5903D10C
-P 2100 7200
-F 0 "U1" H 2100 7400 50  0000 L CNN
-F 1 "LM324" H 2100 7000 50  0000 L CNN
-F 2 "" H 2050 7300 50  0001 C CNN
-F 3 "" H 2150 7400 50  0001 C CNN
-	2    2100 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM324 U1
-U 3 1 5903D176
-P 4000 6000
-F 0 "U1" H 4000 6200 50  0000 L CNN
-F 1 "LM324" H 4000 5800 50  0000 L CNN
-F 2 "" H 3950 6100 50  0001 C CNN
-F 3 "" H 4050 6200 50  0001 C CNN
-	3    4000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM324 U1
-U 4 1 5903D1D5
-P 4000 7300
-F 0 "U1" H 4000 7500 50  0000 L CNN
-F 1 "LM324" H 4000 7100 50  0000 L CNN
-F 2 "" H 3950 7400 50  0001 C CNN
-F 3 "" H 4050 7500 50  0001 C CNN
-	4    4000 7300
-	1    0    0    -1  
-$EndComp
 Text Notes 2000 5200 0    60   ~ 0
 Voltage Sense for\n- Super Speed channel switching\n- Current Capability Detection
 Text Notes 1300 5400 0    60   ~ 0
 Switch Detection
 Text Label 2700 6000 2    60   ~ 0
 Switch
-Text Notes 800  6700 0    60   ~ 0
-Summing Amplifier\nbuffers active CC's voltage\n
 Text Notes 3300 5400 0    60   ~ 0
 1.5 Amp Capacity Detection
 Text Notes 3300 6700 0    60   ~ 0
@@ -405,18 +338,12 @@ Text Label 4700 7300 2    60   ~ 0
 Text HLabel 8200 3700 2    60   Input ~ 0
 BE_Array
 Wire Wire Line
-	1500 7300 1800 7300
-Wire Wire Line
-	2000 6800 2200 6800
-Wire Wire Line
-	2000 6900 2000 6800
+	1700 7300 1800 7300
 Connection ~ 1700 7100
 Wire Wire Line
-	1500 7100 1800 7100
+	1500 7100 1700 7100
 Wire Wire Line
 	1700 7100 1700 7200
-Wire Wire Line
-	7800 3400 7700 3500
 Wire Wire Line
 	7700 3500 7300 3500
 Wire Wire Line
@@ -430,7 +357,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 6100 3700 6100
 Wire Wire Line
-	3300 5600 3300 5900
+	3300 5800 3300 5900
 Wire Wire Line
 	4700 7300 4300 7300
 Wire Wire Line
@@ -447,18 +374,8 @@ Wire Wire Line
 	4300 3500 3700 3500
 Wire Wire Line
 	3300 7400 3700 7400
-Connection ~ 3900 6900
 Wire Wire Line
-	3300 6900 3300 7200
-Wire Wire Line
-	3900 6900 3900 7000
-Wire Wire Line
-	3300 6900 4100 6900
-Connection ~ 3900 5600
-Wire Wire Line
-	3900 5600 3900 5700
-Wire Wire Line
-	3300 5600 4100 5600
+	3300 7100 3300 7200
 Wire Wire Line
 	3500 5900 3700 5900
 Wire Wire Line
@@ -525,10 +442,6 @@ Wire Wire Line
 	1300 1900 1600 1900
 Wire Wire Line
 	1300 1400 1600 1400
-Wire Wire Line
-	2800 1800 3600 1800
-Wire Wire Line
-	3100 1800 3100 1800
 Wire Wire Line
 	3500 1100 2800 1100
 Wire Wire Line
@@ -639,8 +552,6 @@ Text Label 7400 3800 0    60   ~ 0
 BE_2
 Text Label 7400 3900 0    60   ~ 0
 BE_3
-Wire Wire Line
-	7800 3400 7900 3300
 Text HLabel 7600 4000 2    60   Input ~ 0
 ~TXE
 Text HLabel 7600 4100 2    60   Input ~ 0
@@ -664,7 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 2500 6800 2900
 Wire Wire Line
-	5900 2500 6800 2500
+	5900 2500 6200 2500
 Wire Wire Line
 	6700 2900 6700 2500
 Connection ~ 6700 2500
@@ -674,7 +585,7 @@ Connection ~ 6600 2500
 Wire Wire Line
 	6900 2900 6900 2500
 Wire Wire Line
-	6900 2500 7300 2500
+	6900 2500 7000 2500
 Wire Wire Line
 	7000 2900 7000 2500
 Connection ~ 7000 2500
@@ -684,9 +595,11 @@ Connection ~ 7100 2500
 Wire Wire Line
 	5800 3100 6200 3100
 $Comp
-L C_Small C3
+L Super_Blaster_v0.1-rescue:C_Small C3
 U 1 1 590928A7
 P 2300 3400
+AR Path="/590928A7" Ref="C3"  Part="1" 
+AR Path="/5900EC3E/590928A7" Ref="C3"  Part="1" 
 F 0 "C3" H 2310 3470 50  0000 L CNN
 F 1 ".1u" H 2310 3320 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2300 3400 50  0001 C CNN
@@ -695,9 +608,11 @@ F 3 "" H 2300 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C1
+L Super_Blaster_v0.1-rescue:C_Small C1
 U 1 1 59092938
 P 2000 3500
+AR Path="/59092938" Ref="C1"  Part="1" 
+AR Path="/5900EC3E/59092938" Ref="C1"  Part="1" 
 F 0 "C1" H 2010 3570 50  0000 L CNN
 F 1 ".1u" H 2010 3420 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2000 3500 50  0001 C CNN
@@ -706,9 +621,11 @@ F 3 "" H 2000 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C4
+L Super_Blaster_v0.1-rescue:C_Small C4
 U 1 1 59092A50
 P 2300 3900
+AR Path="/59092A50" Ref="C4"  Part="1" 
+AR Path="/5900EC3E/59092A50" Ref="C4"  Part="1" 
 F 0 "C4" H 2310 3970 50  0000 L CNN
 F 1 ".1u" H 2310 3820 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2300 3900 50  0001 C CNN
@@ -717,9 +634,11 @@ F 3 "" H 2300 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C2
+L Super_Blaster_v0.1-rescue:C_Small C2
 U 1 1 59092A56
 P 2000 4000
+AR Path="/59092A56" Ref="C2"  Part="1" 
+AR Path="/5900EC3E/59092A56" Ref="C2"  Part="1" 
 F 0 "C2" H 2010 4070 50  0000 L CNN
 F 1 ".1u" H 2010 3920 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2000 4000 50  0001 C CNN
@@ -738,9 +657,11 @@ Wire Wire Line
 Text GLabel 7300 2500 2    60   Input ~ 0
 3v3
 $Comp
-L C_Small C8
+L Super_Blaster_v0.1-rescue:C_Small C8
 U 1 1 590935CC
 P 6500 2600
+AR Path="/590935CC" Ref="C8"  Part="1" 
+AR Path="/5900EC3E/590935CC" Ref="C8"  Part="1" 
 F 0 "C8" H 6510 2670 50  0000 L CNN
 F 1 "4.7uF" H 6510 2520 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 6500 2600 50  0001 C CNN
@@ -759,9 +680,11 @@ GPIO0
 Text HLabel 7600 4700 2    60   Input ~ 0
 GPIO1
 $Comp
-L R_Small R8
+L Super_Blaster_v0.1-rescue:R_Small R8
 U 1 1 59095192
 P 6100 4900
+AR Path="/59095192" Ref="R8"  Part="1" 
+AR Path="/5900EC3E/59095192" Ref="R8"  Part="1" 
 F 0 "R8" H 6130 4920 50  0000 L CNN
 F 1 "1.6K 1%" H 6130 4860 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 6100 4900 50  0001 C CNN
@@ -778,11 +701,13 @@ Wire Wire Line
 Wire Wire Line
 	6100 4700 6200 4700
 Wire Wire Line
-	4900 4600 5600 4600
+	4900 4600 5100 4600
 $Comp
-L R_Small R7
+L Super_Blaster_v0.1-rescue:R_Small R7
 U 1 1 590962CC
 P 5100 4400
+AR Path="/590962CC" Ref="R7"  Part="1" 
+AR Path="/5900EC3E/590962CC" Ref="R7"  Part="1" 
 F 0 "R7" H 5130 4420 50  0000 L CNN
 F 1 "10K" H 5130 4360 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 5100 4400 50  0001 C CNN
@@ -791,9 +716,11 @@ F 3 "" H 5100 4400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
+L Super_Blaster_v0.1-rescue:C_Small C5
 U 1 1 5909662E
 P 5100 4800
+AR Path="/5909662E" Ref="C5"  Part="1" 
+AR Path="/5900EC3E/5909662E" Ref="C5"  Part="1" 
 F 0 "C5" H 5110 4870 50  0000 L CNN
 F 1 ".1u" H 5110 4720 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 5100 4800 50  0001 C CNN
@@ -805,7 +732,7 @@ Text HLabel 4900 4600 0    60   Input ~ 0
 ~Reset
 Connection ~ 5100 4600
 Wire Wire Line
-	5100 4500 5100 4700
+	5100 4500 5100 4600
 Text GLabel 4900 4200 0    60   Input ~ 0
 3v3
 Wire Wire Line
@@ -821,9 +748,11 @@ Wire Wire Line
 Wire Wire Line
 	7600 4700 7300 4700
 $Comp
-L C_Small C6
+L Super_Blaster_v0.1-rescue:C_Small C6
 U 1 1 59098AB7
 P 5100 3900
+AR Path="/59098AB7" Ref="C6"  Part="1" 
+AR Path="/5900EC3E/59098AB7" Ref="C6"  Part="1" 
 F 0 "C6" H 5110 3970 50  0000 L CNN
 F 1 "18p" H 5110 3820 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 5100 3900 50  0001 C CNN
@@ -832,23 +761,25 @@ F 3 "" H 5100 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Crystal_GND24-RESCUE-Super_Blaster_v0.1 Y1
+L Super_Blaster_v0.1-rescue:Crystal_GND24-RESCUE-Super_Blaster_v0.1 Y1
 U 1 1 59098CF3
 P 5400 4000
 AR Path="/59098CF3" Ref="Y1"  Part="1" 
 AR Path="/5900EC3E/59098CF3" Ref="Y1"  Part="1" 
 F 0 "Y1" H 5400 4100 50  0000 C CNN
 F 1 "30MHz" H 5400 3900 50  0000 C CNN
-F 2 "Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm" H 5400 4000 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 5400 4000 50  0001 C CNN
 F 3 "" H 5400 4000 50  0001 C CNN
 F 4 "XRCGB30M000F3M00R0" H 5400 4000 60  0001 C CNN "MPN"
 	1    5400 4000
 	0    -1   1    0   
 $EndComp
 $Comp
-L C_Small C7
+L Super_Blaster_v0.1-rescue:C_Small C7
 U 1 1 59098E40
 P 5400 4300
+AR Path="/59098E40" Ref="C7"  Part="1" 
+AR Path="/5900EC3E/59098E40" Ref="C7"  Part="1" 
 F 0 "C7" H 5410 4370 50  0000 L CNN
 F 1 "18p" H 5410 4220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 5400 4300 50  0001 C CNN
@@ -951,10 +882,10 @@ Xi
 Text Notes 1000 4800 0    60   ~ 0
 fix footprint pinout
 $Comp
-L GND #PWR53
+L power:GND #PWR053
 U 1 1 5A0FD17E
 P 7200 2200
-F 0 "#PWR53" H 7200 1950 50  0001 C CNN
+F 0 "#PWR053" H 7200 1950 50  0001 C CNN
 F 1 "GND" H 7205 2027 50  0000 C CNN
 F 2 "" H 7200 2200 50  0001 C CNN
 F 3 "" H 7200 2200 50  0001 C CNN
@@ -962,10 +893,10 @@ F 3 "" H 7200 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR47
+L power:GND #PWR047
 U 1 1 5A0FD49F
 P 5100 4900
-F 0 "#PWR47" H 5100 4650 50  0001 C CNN
+F 0 "#PWR047" H 5100 4650 50  0001 C CNN
 F 1 "GND" H 5105 4727 50  0000 C CNN
 F 2 "" H 5100 4900 50  0001 C CNN
 F 3 "" H 5100 4900 50  0001 C CNN
@@ -973,10 +904,10 @@ F 3 "" H 5100 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR51
+L power:GND #PWR051
 U 1 1 5A0FD567
 P 6100 5000
-F 0 "#PWR51" H 6100 4750 50  0001 C CNN
+F 0 "#PWR051" H 6100 4750 50  0001 C CNN
 F 1 "GND" H 6105 4827 50  0000 C CNN
 F 2 "" H 6100 5000 50  0001 C CNN
 F 3 "" H 6100 5000 50  0001 C CNN
@@ -984,10 +915,10 @@ F 3 "" H 6100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR52
+L power:GND #PWR052
 U 1 1 5A0FDBFC
 P 6700 5000
-F 0 "#PWR52" H 6700 4750 50  0001 C CNN
+F 0 "#PWR052" H 6700 4750 50  0001 C CNN
 F 1 "GND" H 6705 4827 50  0000 C CNN
 F 2 "" H 6700 5000 50  0001 C CNN
 F 3 "" H 6700 5000 50  0001 C CNN
@@ -995,10 +926,10 @@ F 3 "" H 6700 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR50
+L power:GND #PWR050
 U 1 1 5A0FDDF8
 P 5700 2800
-F 0 "#PWR50" H 5700 2550 50  0001 C CNN
+F 0 "#PWR050" H 5700 2550 50  0001 C CNN
 F 1 "GND" H 5705 2627 50  0000 C CNN
 F 2 "" H 5700 2800 50  0001 C CNN
 F 3 "" H 5700 2800 50  0001 C CNN
@@ -1006,10 +937,10 @@ F 3 "" H 5700 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR41
+L power:GND #PWR041
 U 1 1 5A0FE1B4
 P 3500 1200
-F 0 "#PWR41" H 3500 950 50  0001 C CNN
+F 0 "#PWR041" H 3500 950 50  0001 C CNN
 F 1 "GND" H 3505 1027 50  0000 C CNN
 F 2 "" H 3500 1200 50  0001 C CNN
 F 3 "" H 3500 1200 50  0001 C CNN
@@ -1017,10 +948,10 @@ F 3 "" H 3500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR42
+L power:GND #PWR042
 U 1 1 5A0FE42C
 P 3600 2000
-F 0 "#PWR42" H 3600 1750 50  0001 C CNN
+F 0 "#PWR042" H 3600 1750 50  0001 C CNN
 F 1 "GND" H 3605 1827 50  0000 C CNN
 F 2 "" H 3600 2000 50  0001 C CNN
 F 3 "" H 3600 2000 50  0001 C CNN
@@ -1028,10 +959,10 @@ F 3 "" H 3600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR31
+L power:GND #PWR031
 U 1 1 5A0FE46D
 P 1000 1200
-F 0 "#PWR31" H 1000 950 50  0001 C CNN
+F 0 "#PWR031" H 1000 950 50  0001 C CNN
 F 1 "GND" H 1005 1027 50  0000 C CNN
 F 2 "" H 1000 1200 50  0001 C CNN
 F 3 "" H 1000 1200 50  0001 C CNN
@@ -1039,10 +970,10 @@ F 3 "" H 1000 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR30
+L power:GND #PWR030
 U 1 1 5A0FE550
 P 900 1700
-F 0 "#PWR30" H 900 1450 50  0001 C CNN
+F 0 "#PWR030" H 900 1450 50  0001 C CNN
 F 1 "GND" H 905 1527 50  0000 C CNN
 F 2 "" H 900 1700 50  0001 C CNN
 F 3 "" H 900 1700 50  0001 C CNN
@@ -1050,10 +981,10 @@ F 3 "" H 900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR32
+L power:GND #PWR032
 U 1 1 5A0FE591
 P 1200 2500
-F 0 "#PWR32" H 1200 2250 50  0001 C CNN
+F 0 "#PWR032" H 1200 2250 50  0001 C CNN
 F 1 "GND" H 1205 2327 50  0000 C CNN
 F 2 "" H 1200 2500 50  0001 C CNN
 F 3 "" H 1200 2500 50  0001 C CNN
@@ -1061,10 +992,10 @@ F 3 "" H 1200 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR38
+L power:GND #PWR038
 U 1 1 5A0FE917
 P 3300 2500
-F 0 "#PWR38" H 3300 2250 50  0001 C CNN
+F 0 "#PWR038" H 3300 2250 50  0001 C CNN
 F 1 "GND" H 3305 2327 50  0000 C CNN
 F 2 "" H 3300 2500 50  0001 C CNN
 F 3 "" H 3300 2500 50  0001 C CNN
@@ -1072,10 +1003,10 @@ F 3 "" H 3300 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR45
+L power:GND #PWR045
 U 1 1 5A0FEA4B
 P 4300 3500
-F 0 "#PWR45" H 4300 3250 50  0001 C CNN
+F 0 "#PWR045" H 4300 3250 50  0001 C CNN
 F 1 "GND" H 4305 3327 50  0000 C CNN
 F 2 "" H 4300 3500 50  0001 C CNN
 F 3 "" H 4300 3500 50  0001 C CNN
@@ -1083,10 +1014,10 @@ F 3 "" H 4300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR37
+L power:GND #PWR037
 U 1 1 5A0FEAF8
 P 3200 4400
-F 0 "#PWR37" H 3200 4150 50  0001 C CNN
+F 0 "#PWR037" H 3200 4150 50  0001 C CNN
 F 1 "GND" H 3205 4227 50  0000 C CNN
 F 2 "" H 3200 4400 50  0001 C CNN
 F 3 "" H 3200 4400 50  0001 C CNN
@@ -1096,10 +1027,10 @@ $EndComp
 Text Notes 1000 4900 0    60   ~ 0
 Switch to uC F103?
 $Comp
-L GND #PWR46
+L power:GND #PWR046
 U 1 1 5A1012D9
 P 5100 4000
-F 0 "#PWR46" H 5100 3750 50  0001 C CNN
+F 0 "#PWR046" H 5100 3750 50  0001 C CNN
 F 1 "GND" V 5105 3872 50  0001 R CNN
 F 2 "" H 5100 4000 50  0001 C CNN
 F 3 "" H 5100 4000 50  0001 C CNN
@@ -1107,7 +1038,7 @@ F 3 "" H 5100 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FT601Q U4
+L Homebrew:FT601Q U4
 U 1 1 590288D4
 P 6900 4000
 F 0 "U4" H 7000 3100 60  0000 C CNN
@@ -1118,10 +1049,10 @@ F 3 "" H 6700 4000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR48
+L power:GND #PWR048
 U 1 1 5A0FDC3D
 P 5400 4400
-F 0 "#PWR48" H 5400 4150 50  0001 C CNN
+F 0 "#PWR048" H 5400 4150 50  0001 C CNN
 F 1 "GND" V 5405 4272 50  0001 R CNN
 F 2 "" H 5400 4400 50  0001 C CNN
 F 3 "" H 5400 4400 50  0001 C CNN
@@ -1135,10 +1066,10 @@ Wire Wire Line
 Text GLabel 9500 3500 2    60   Input ~ 0
 USB_V
 $Comp
-L GND #PWR34
+L power:GND #PWR034
 U 1 1 5A110AF5
 P 1900 2700
-F 0 "#PWR34" H 1900 2450 50  0001 C CNN
+F 0 "#PWR034" H 1900 2450 50  0001 C CNN
 F 1 "GND" H 1905 2527 50  0000 C CNN
 F 2 "" H 1900 2700 50  0001 C CNN
 F 3 "" H 1900 2700 50  0001 C CNN
@@ -1146,9 +1077,11 @@ F 3 "" H 1900 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C10
+L Super_Blaster_v0.1-rescue:C_Small C10
 U 1 1 5A110DEB
 P 1600 2600
+AR Path="/5A110DEB" Ref="C10"  Part="1" 
+AR Path="/5900EC3E/5A110DEB" Ref="C10"  Part="1" 
 F 0 "C10" H 1508 2554 50  0000 R CNN
 F 1 ".1uF" H 1508 2645 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 1600 2600 50  0001 C CNN
@@ -1157,9 +1090,11 @@ F 3 "" H 1600 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C11
+L Super_Blaster_v0.1-rescue:C_Small C11
 U 1 1 5A110F1F
 P 2100 2600
+AR Path="/5A110F1F" Ref="C11"  Part="1" 
+AR Path="/5900EC3E/5A110F1F" Ref="C11"  Part="1" 
 F 0 "C11" H 2008 2554 50  0000 R CNN
 F 1 "1nF" H 2008 2645 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 2100 2600 50  0001 C CNN
@@ -1168,9 +1103,11 @@ F 3 "" H 2100 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R11
+L Super_Blaster_v0.1-rescue:R_Small R11
 U 1 1 5A111146
 P 2400 2600
+AR Path="/5A111146" Ref="R11"  Part="1" 
+AR Path="/5900EC3E/5A111146" Ref="R11"  Part="1" 
 F 0 "R11" H 2459 2646 50  0000 L CNN
 F 1 "1M" H 2459 2555 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 2400 2600 50  0001 C CNN
@@ -1181,9 +1118,9 @@ $EndComp
 Wire Wire Line
 	1900 2400 1900 2500
 Wire Wire Line
-	1600 2500 2400 2500
+	1600 2500 1900 2500
 Wire Wire Line
-	1600 2700 2400 2700
+	1600 2700 1900 2700
 Connection ~ 1900 2500
 Connection ~ 1900 2700
 Connection ~ 2100 2500
@@ -1197,14 +1134,14 @@ Wire Wire Line
 Wire Wire Line
 	5400 3800 5400 3900
 Wire Wire Line
-	5100 3800 5600 3800
+	5100 3800 5400 3800
 Wire Wire Line
 	5200 4000 5100 4000
 $Comp
-L GND #PWR49
+L power:GND #PWR049
 U 1 1 5A2FAD6A
 P 5600 4000
-F 0 "#PWR49" H 5600 3750 50  0001 C CNN
+F 0 "#PWR049" H 5600 3750 50  0001 C CNN
 F 1 "GND" V 5605 3872 50  0001 R CNN
 F 2 "" H 5600 4000 50  0001 C CNN
 F 3 "" H 5600 4000 50  0001 C CNN
@@ -1221,10 +1158,10 @@ Wire Wire Line
 	5600 3900 5600 3800
 Connection ~ 5400 3800
 $Comp
-L GND #PWR40
+L power:GND #PWR040
 U 1 1 5A30B01D
 P 3300 7600
-F 0 "#PWR40" H 3300 7350 50  0001 C CNN
+F 0 "#PWR040" H 3300 7350 50  0001 C CNN
 F 1 "GND" H 3305 7427 50  0000 C CNN
 F 2 "" H 3300 7600 50  0001 C CNN
 F 3 "" H 3300 7600 50  0001 C CNN
@@ -1232,32 +1169,10 @@ F 3 "" H 3300 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR44
-U 1 1 5A30B082
-P 3900 7600
-F 0 "#PWR44" H 3900 7350 50  0001 C CNN
-F 1 "GND" H 3905 7427 50  0000 C CNN
-F 2 "" H 3900 7600 50  0001 C CNN
-F 3 "" H 3900 7600 50  0001 C CNN
-	1    3900 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR43
-U 1 1 5A30B0E7
-P 3900 6300
-F 0 "#PWR43" H 3900 6050 50  0001 C CNN
-F 1 "GND" H 3905 6127 50  0000 C CNN
-F 2 "" H 3900 6300 50  0001 C CNN
-F 3 "" H 3900 6300 50  0001 C CNN
-	1    3900 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR39
+L power:GND #PWR039
 U 1 1 5A30B14C
 P 3300 6300
-F 0 "#PWR39" H 3300 6050 50  0001 C CNN
+F 0 "#PWR039" H 3300 6050 50  0001 C CNN
 F 1 "GND" H 3305 6127 50  0000 C CNN
 F 2 "" H 3300 6300 50  0001 C CNN
 F 3 "" H 3300 6300 50  0001 C CNN
@@ -1265,34 +1180,24 @@ F 3 "" H 3300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR35
+L power:GND #PWR035
 U 1 1 5A30B1B1
 P 1900 6300
-F 0 "#PWR35" H 1900 6050 50  0001 C CNN
+F 0 "#PWR035" H 1900 6050 50  0001 C CNN
 F 1 "GND" H 1905 6127 50  0000 C CNN
 F 2 "" H 1900 6300 50  0001 C CNN
 F 3 "" H 1900 6300 50  0001 C CNN
 	1    1900 6300
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR36
-U 1 1 5A30C124
-P 2000 7500
-F 0 "#PWR36" H 2000 7250 50  0001 C CNN
-F 1 "GND" H 2005 7327 50  0000 C CNN
-F 2 "" H 2000 7500 50  0001 C CNN
-F 3 "" H 2000 7500 50  0001 C CNN
-	1    2000 7500
-	1    0    0    -1  
-$EndComp
-Connection ~ 2400 7200
 Text GLabel 5800 3100 0    60   Input ~ 0
 USB_V
 $Comp
-L C_Small C27
+L Super_Blaster_v0.1-rescue:C_Small C27
 U 1 1 5B010F24
 P 6200 2600
+AR Path="/5B010F24" Ref="C27"  Part="1" 
+AR Path="/5900EC3E/5B010F24" Ref="C27"  Part="1" 
 F 0 "C27" H 6108 2554 50  0000 R CNN
 F 1 ".1uF" H 6108 2645 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 6200 2600 50  0001 C CNN
@@ -1301,9 +1206,11 @@ F 3 "" H 6200 2600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L C_Small C28
+L Super_Blaster_v0.1-rescue:C_Small C28
 U 1 1 5B01101D
 P 6300 2100
+AR Path="/5B01101D" Ref="C28"  Part="1" 
+AR Path="/5900EC3E/5B01101D" Ref="C28"  Part="1" 
 F 0 "C28" H 6208 2054 50  0000 R CNN
 F 1 "1uF" H 6208 2145 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 2100 50  0001 C CNN
@@ -1312,9 +1219,11 @@ F 3 "" H 6300 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C29
+L Super_Blaster_v0.1-rescue:C_Small C29
 U 1 1 5B011095
 P 6800 2100
+AR Path="/5B011095" Ref="C29"  Part="1" 
+AR Path="/5900EC3E/5B011095" Ref="C29"  Part="1" 
 F 0 "C29" H 6708 2054 50  0000 R CNN
 F 1 ".1uF" H 6708 2145 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 6800 2100 50  0001 C CNN
@@ -1325,9 +1234,11 @@ $EndComp
 Text GLabel 7200 2000 2    60   Input ~ 0
 3v3
 $Comp
-L C_Small C26
+L Super_Blaster_v0.1-rescue:C_Small C26
 U 1 1 5B01132A
 P 5900 2600
+AR Path="/5B01132A" Ref="C26"  Part="1" 
+AR Path="/5900EC3E/5B01132A" Ref="C26"  Part="1" 
 F 0 "C26" H 5808 2554 50  0000 R CNN
 F 1 "1uF" H 5808 2645 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0402" H 5900 2600 50  0001 C CNN
@@ -1336,7 +1247,7 @@ F 3 "" H 5900 2600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	5700 2800 6500 2800
+	5700 2800 5900 2800
 Wire Wire Line
 	6500 2800 6500 2700
 Wire Wire Line
@@ -1348,21 +1259,23 @@ Connection ~ 5900 2800
 Connection ~ 6500 2500
 Connection ~ 6200 2500
 Wire Wire Line
-	6300 2200 7200 2200
+	6300 2200 6800 2200
 Connection ~ 6800 2200
 Wire Wire Line
-	6300 2000 7200 2000
+	6300 2000 6800 2000
 Connection ~ 6800 2000
 Wire Wire Line
-	2400 7200 2400 7800
+	2400 7200 2400 7500
 Wire Wire Line
-	2400 7800 1500 7800
+	2400 7500 1700 7500
 Wire Wire Line
-	1500 7800 1500 7300
+	1700 7500 1700 7300
 $Comp
-L R_Small R18
+L Super_Blaster_v0.1-rescue:R_Small R18
 U 1 1 5B0EF54E
 P 1400 7100
+AR Path="/5B0EF54E" Ref="R18"  Part="1" 
+AR Path="/5900EC3E/5B0EF54E" Ref="R18"  Part="1" 
 F 0 "R18" H 1430 7120 50  0000 L CNN
 F 1 "?" H 1430 7060 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 1400 7100 50  0001 C CNN
@@ -1371,9 +1284,11 @@ F 3 "" H 1400 7100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R19
+L Super_Blaster_v0.1-rescue:R_Small R19
 U 1 1 5B0EF5F6
 P 1400 7200
+AR Path="/5B0EF5F6" Ref="R19"  Part="1" 
+AR Path="/5900EC3E/5B0EF5F6" Ref="R19"  Part="1" 
 F 0 "R19" H 1430 7220 50  0000 L CNN
 F 1 "?" H 1430 7160 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" H 1400 7200 50  0001 C CNN
@@ -1381,4 +1296,106 @@ F 3 "" H 1400 7200 50  0001 C CNN
 	1    1400 7200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1700 7100 1800 7100
+Wire Wire Line
+	6700 2500 6800 2500
+Wire Wire Line
+	6600 2500 6700 2500
+Wire Wire Line
+	7000 2500 7100 2500
+Wire Wire Line
+	7100 2500 7300 2500
+Wire Wire Line
+	5100 4600 5600 4600
+Wire Wire Line
+	5100 4600 5100 4700
+Wire Wire Line
+	1900 2500 2100 2500
+Wire Wire Line
+	1900 2700 2100 2700
+Wire Wire Line
+	2100 2500 2400 2500
+Wire Wire Line
+	2100 2700 2400 2700
+Wire Wire Line
+	5400 3800 5600 3800
+Wire Wire Line
+	6200 2800 6500 2800
+Wire Wire Line
+	5900 2800 6200 2800
+Wire Wire Line
+	6500 2500 6600 2500
+Wire Wire Line
+	6200 2500 6500 2500
+Wire Wire Line
+	6800 2200 7200 2200
+Wire Wire Line
+	6800 2000 7200 2000
+Wire Wire Line
+	7700 3500 7900 3300
+Wire Wire Line
+	2800 1800 3600 1800
+$Comp
+L Amplifier_Operational:MCP6L94 U1
+U 1 1 5B7C8C3F
+P 2100 7200
+F 0 "U1" H 2100 7567 50  0000 C CNN
+F 1 "MCP6L94" H 2100 7476 50  0000 C CNN
+F 2 "SMD_Packages:SSOP-14" H 2050 7300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 2150 7400 50  0001 C CNN
+	1    2100 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6L94 U1
+U 2 1 5B7C951A
+P 4000 6000
+F 0 "U1" H 4000 6367 50  0000 C CNN
+F 1 "MCP6L94" H 4000 6276 50  0000 C CNN
+F 2 "SMD_Packages:SSOP-14" H 3950 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 4050 6200 50  0001 C CNN
+	2    4000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6L94 U1
+U 3 1 5B7C9678
+P 4000 7300
+F 0 "U1" H 4000 7667 50  0000 C CNN
+F 1 "MCP6L94" H 4000 7576 50  0000 C CNN
+F 2 "SMD_Packages:SSOP-14" H 3950 7400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 4050 7500 50  0001 C CNN
+	3    4000 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6L94 U1
+U 4 1 5B7C9748
+P 2000 6000
+F 0 "U1" H 2000 6300 50  0000 C CNN
+F 1 "MCP6L94" H 2100 6200 50  0000 C CNN
+F 2 "SMD_Packages:SSOP-14" H 1950 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 2050 6200 50  0001 C CNN
+	4    2000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6L94 U1
+U 5 1 5B7C97F2
+P 2000 6000
+F 0 "U1" H 1958 6000 50  0001 L CNN
+F 1 "MCP6L94" H 1958 5955 50  0001 L CNN
+F 2 "SMD_Packages:SSOP-14" H 1950 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 2050 6200 50  0001 C CNN
+	5    2000 6000
+	1    0    0    -1  
+$EndComp
+Text Notes 800  6700 0    60   ~ 0
+Summing Amplifier\nbuffers active CC's voltage\n
+Wire Wire Line
+	3300 7100 3200 7100
+Wire Wire Line
+	3300 5800 3200 5800
+Connection ~ 2400 7200
 $EndSCHEMATC
