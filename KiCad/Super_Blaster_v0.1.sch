@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 1 1 58FB0409
 P 5500 3200
 F 0 "U2" H 5700 3450 60  0000 L CNN
@@ -26,7 +26,7 @@ F 3 "" H 5500 3200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 2 1 58FB0482
 P 9300 900
 F 0 "U2" H 9500 1150 60  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "" H 9300 900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 5 1 58FB070B
 P 7800 900
 F 0 "U2" H 8000 1150 60  0000 L CNN
@@ -176,7 +176,7 @@ F 3 "" H 5600 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Homebrew:REG_EN_GND_LX_VIN_NC_FB U5
+L Super_Blaster_v0.1-rescue:REG_EN_GND_LX_VIN_NC_FB-Homebrew U5
 U 1 1 5ADFC0FF
 P 5100 4900
 F 0 "U5" H 4900 5110 60  0000 L BNN
@@ -360,7 +360,7 @@ Text GLabel 6200 4800 2    60   Input ~ 0
 Text GLabel 6200 5600 2    60   Input ~ 0
 1v2
 $Comp
-L Homebrew:REG_EN_GND_LX_VIN_NC_FB U6
+L Super_Blaster_v0.1-rescue:REG_EN_GND_LX_VIN_NC_FB-Homebrew U6
 U 1 1 5AE5403A
 P 5100 5700
 F 0 "U6" H 4900 5910 60  0000 L BNN
@@ -633,7 +633,7 @@ U 1 1 5AFCE036
 P 5400 4050
 F 0 "D1" H 5400 4150 50  0000 C CNN
 F 1 "D" H 5400 3950 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-323" H 5400 4050 50  0001 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 5400 4050 50  0001 C CNN
 F 3 "" H 5400 4050 50  0001 C CNN
 	1    5400 4050
 	0    1    1    0   

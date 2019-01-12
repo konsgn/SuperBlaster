@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 4 1 59073192
 P 6600 1200
 F 0 "U2" H 6800 1450 60  0000 L CNN
@@ -26,7 +26,7 @@ F 3 "" H 6600 1200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 6 1 59079EB8
 P 1600 1000
 F 0 "U2" H 1800 1250 60  0000 L CNN
@@ -171,12 +171,12 @@ BE_2
 Text GLabel 6600 4300 0    60   Input ~ 0
 BE_3
 $Comp
-L Homebrew:CLOCK_EN M1
+L Super_Blaster_v0.1-rescue:CLOCK_EN-Homebrew M1
 U 1 1 59136E59
 P 1900 6800
 F 0 "M1" H 1750 6900 45  0000 C CNN
 F 1 "CLOCK_EN" H 1900 6600 45  0001 C CNN
-F 2 "Crystals:Crystal_SMD_2520-4pin_2.5x2.0mm" H 1900 6800 20  0001 C CNN
+F 2 "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm" H 1900 6800 20  0001 C CNN
 F 3 "" H 1900 6800 60  0001 C CNN
 	1    1900 6800
 	1    0    0    -1  
@@ -201,7 +201,7 @@ $EndComp
 Text Label 6100 4100 0    60   ~ 0
 50MHz
 $Comp
-L Homebrew:iCE40-HX8K-CT256 U2
+L Super_Blaster_v0.1-rescue:iCE40-HX8K-CT256-Homebrew U2
 U 3 1 591E22F9
 P 9400 900
 F 0 "U2" H 9600 1150 60  0000 L CNN

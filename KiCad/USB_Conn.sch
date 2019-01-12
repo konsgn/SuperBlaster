@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Homebrew:USB_TypeC_AMP_12401610E4#2A J1
+L Super_Blaster_v0.1-rescue:USB_TypeC_AMP_12401610E4#2A-Homebrew J1
 U 1 1 590111D1
 P 2200 1600
 F 0 "J1" H 1850 2200 60  0000 C CNN
@@ -145,7 +145,7 @@ USB_D_P
 Text Label 5700 3800 0    60   ~ 0
 USB_D_N
 $Comp
-L Homebrew:FUSB340 U3
+L Super_Blaster_v0.1-rescue:FUSB340-Homebrew U3
 U 1 1 590272CD
 P 3200 3800
 F 0 "U3" H 2900 4300 60  0000 C CNN
@@ -192,7 +192,7 @@ USB Type C Connector
 Text Notes 1800 3000 0    60   ~ 0
 USB Super Speed Switch to select active channels
 $Comp
-L Homebrew:FT601Q U4
+L Super_Blaster_v0.1-rescue:FT601Q-Homebrew U4
 U 2 1 59028949
 P 8500 5200
 F 0 "U4" H 8600 4300 60  0000 C CNN
@@ -203,7 +203,7 @@ F 3 "" H 8300 5200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:FT601Q U4
+L Super_Blaster_v0.1-rescue:FT601Q-Homebrew U4
 U 3 1 590299B6
 P 8400 2200
 F 0 "U4" H 8500 1300 60  0000 C CNN
@@ -1038,7 +1038,7 @@ F 3 "" H 5100 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:FT601Q U4
+L Super_Blaster_v0.1-rescue:FT601Q-Homebrew U4
 U 1 1 590288D4
 P 6900 4000
 F 0 "U4" H 7000 3100 60  0000 C CNN
